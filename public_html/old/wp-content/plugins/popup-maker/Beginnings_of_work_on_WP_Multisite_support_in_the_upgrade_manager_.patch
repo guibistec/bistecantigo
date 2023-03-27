@@ -1,0 +1,1542 @@
+Index: wp-content/plugins/popup-maker/includes/admin/upgrades/class-pum-admin-upgrade-routine-6.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- wp-content/plugins/popup-maker/includes/admin/upgrades/class-pum-admin-upgrade-routine-6.php	(date 1460354639000)
++++ wp-content/plugins/popup-maker/includes/admin/upgrades/class-pum-admin-upgrade-routine-6.php	(revision )
+@@ -56,9 +56,8 @@
+ 			@set_time_limit( 0 );
+ 		}
+ 
+-		$upgrades  = PUM_Admin_Upgrades::instance();
+-		$completed = $upgrades->get_arg( 'completed' );
+-		$total     = $upgrades->get_arg( 'total' );
++		$completed = static::$upgrades->get_arg( 'completed' );
++		$total     = static::$upgrades->get_arg( 'total' );
+ 
+ 		// Install new themes
+ 		pum_install_built_in_themes();
+@@ -73,12 +72,12 @@
+ 			foreach ( $popups as $status ) {
+ 				$total += $status;
+ 			}
+-			$upgrades->set_arg( 'total', $total );
++			static::$upgrades->set_arg( 'total', $total );
+ 		}
+ 
+ 		$popups = new PUM_Popup_Query( array(
+-			'number' => $upgrades->get_arg( 'number' ),
+-			'page'   => $upgrades->get_arg( 'step' ),
++			'number' => static::$upgrades->get_arg( 'number' ),
++			'page'   => static::$upgrades->get_arg( 'step' ),
+ 			'status' => array( 'any', 'trash', 'auto-draft' ),
+ 			'order'  => 'ASC',
+ 		) );
+@@ -108,7 +107,7 @@
+ 			}
+ 
+ 			if ( $completed < $total ) {
+-				$upgrades->set_arg( 'completed', $completed );
++				static::$upgrades->set_arg( 'completed', $completed );
+ 				static::next_step();
+ 			}
+ 
+Index: wp-content/plugins/popup-maker/includes/admin/upgrades/class-pum-admin-upgrade-routine-5.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- wp-content/plugins/popup-maker/includes/admin/upgrades/class-pum-admin-upgrade-routine-5.php	(date 1460354639000)
++++ wp-content/plugins/popup-maker/includes/admin/upgrades/class-pum-admin-upgrade-routine-5.php	(revision )
+@@ -44,9 +44,8 @@
+ 			@set_time_limit( 0 );
+ 		}
+ 
+-		$upgrades  = PUM_Admin_Upgrades::instance();
+-		$completed = $upgrades->get_arg( 'completed' );
+-		$total     = $upgrades->get_arg( 'total' );
++		$completed = static::$upgrades->get_arg( 'completed' );
++		$total     = static::$upgrades->get_arg( 'total' );
+ 
+ 		// Set the correct total.
+ 		if ( $total <= 1 ) {
+@@ -55,12 +54,12 @@
+ 			foreach ( $popups as $status ) {
+ 				$total += $status;
+ 			}
+-			$upgrades->set_arg( 'total', $total );
++			static::$upgrades->set_arg( 'total', $total );
+ 		}
+ 
+ 		$popups = new PUM_Popup_Query( array(
+-			'number' => $upgrades->get_arg( 'number' ),
+-			'page'   => $upgrades->get_arg( 'step' ),
++			'number' => static::$upgrades->get_arg( 'number' ),
++			'page'   => static::$upgrades->get_arg( 'step' ),
+ 			'status' => array( 'any', 'trash', 'auto-draft' ),
+ 			'order'  => 'ASC',
+ 		) );
+@@ -79,7 +78,7 @@
+ 			}
+ 
+ 			if ( $completed < $total ) {
+-				$upgrades->set_arg( 'completed', $completed );
++				static::$upgrades->set_arg( 'completed', $completed );
+ 				static::next_step();
+ 			}
+ 
+Index: wp-content/plugins/popup-maker/includes/admin/class-pum-admin-upgrades.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- wp-content/plugins/popup-maker/includes/admin/class-pum-admin-upgrades.php	(date 1460354639000)
++++ wp-content/plugins/popup-maker/includes/admin/class-pum-admin-upgrades.php	(revision )
+@@ -12,7 +12,7 @@
+ 
+ // Exit if accessed directly
+ if ( ! defined( 'ABSPATH' ) ) {
+-    exit;
++	exit;
+ }
+ 
+ /**
+@@ -20,643 +20,731 @@
+  */
+ class PUM_Admin_Upgrades {
+ 
+-    /**
+-     * @var PUM_Admin_Upgrades The one true PUM_Admin_Upgrades
+-     */
+-    private static $instance;
++	/**
++	 * @var PUM_Admin_Upgrades The one true PUM_Admin_Upgrades
++	 */
++	private static $instance;
+ 
+-    /**
+-     * @var $upgrade_args
+-     */
+-    public $upgrade_args = array();
++	/**
++	 * @var $upgrade_args
++	 */
++	public $upgrade_args = array();
+ 
+-    public $page = null;
++	public $page = null;
+ 
+-    public $doing_upgrades = false;
++	public $doing_upgrades = false;
+ 
+-    public $current_routine = null;
++	public $current_routine = null;
+ 
+-    public $next_routine = null;
++	public $next_routine = null;
+ 
+-    /**
+-     * Initialize the actions needed to process upgrades.
+-     */
+-    public static function instance() {
+-        if ( ! isset( self::$instance ) && ! ( self::$instance instanceof PUM_Admin_Upgrades ) ) {
+-            self::$instance = new PUM_Admin_Upgrades;
+-            self::$instance->init();
+-        }
++	/**
++	 * Initialize the actions needed to process upgrades.
++	 */
++	public static function instance() {
++		if ( ! isset( self::$instance ) && ! ( self::$instance instanceof PUM_Admin_Upgrades ) ) {
++			self::$instance = new PUM_Admin_Upgrades;
++			self::$instance->init();
++		}
+ 
+-        return self::$instance;
+-    }
++		return self::$instance;
++	}
+ 
++	public function is_network() {
++		return function_exists( 'is_multisite' ) && is_multisite();
++	}
++
++	public function is_network_admin() {
++		return $this->is_network() && is_network_admin();
++	}
++
++	public function required_cap() {
++		return $this->is_network_admin() ? 'manage_network_plugins' : 'manage_options';
++	}
++
++	public function is_network_ajax() {
++		return $this->is_network() && isset( $_REQUEST['hash'] ) && $_REQUEST['hash'] == wp_hash( 'pum-network-admin' );
++	}
++
++	public function is_network_admin_request() {
++		return $this->is_network_admin() || $this->is_network_ajax();
++	}
++
+-    /**
+-     * Initialize the actions needed to process upgrades.
+-     */
+-    public function init() {
++	/**
++	 * Initialize the actions needed to process upgrades.
++	 */
++	public function init() {
+ 
+-        $this->update_plugin_version();
++		$this->update_plugin_version();
+ 
+-        // bail if this plugin data doesn't need updating
++		// bail if this plugin data doesn't need updating
+-        if ( pum_get_db_ver() >= PUM::DB_VER ) {
++		if ( ! $this->is_network_admin() && pum_get_db_ver() >= PUM::DB_VER ) {
+-            return;
+-        }
++			return;
++		}
+ 
+-        add_action( 'admin_menu', array( $this, 'register_pages' ) );
+-        add_action( 'network_admin_menu', array( $this, 'register_pages' ) );
++		add_action( 'admin_menu', array( $this, 'register_pages' ) );
++		add_action( 'network_admin_menu', array( $this, 'register_pages' ) );
+ 
+-        add_action( 'admin_init', array( $this, 'process_upgrade_args' ) );
++		add_action( 'admin_notices', array( $this, 'show_upgrade_notices' ) );
++		add_action( 'network_admin_notices', array( $this, 'show_upgrade_notices' ) );
+ 
++		add_action( 'admin_init', array( $this, 'process_upgrade_args' ) );
+-        add_action( 'wp_ajax_pum_trigger_upgrades', array( $this, 'trigger_upgrades' ) );
++		add_action( 'wp_ajax_pum_trigger_upgrades', array( $this, 'trigger_upgrades' ) );
+-        add_action( 'admin_notices', array( $this, 'show_upgrade_notices' ) );
+-    }
++	}
+ 
+-    public function update_plugin_version() {
++	public function update_plugin_version() {
+ 
+-        $current_ver = get_option( 'pum_ver', false );
++		$current_ver = get_site_option( 'pum_ver', false );
+ 
+-        if ( ! $current_ver ) {
++		if ( ! $current_ver ) {
+ 
+-            $deprecated_ver = get_site_option( 'popmake_version', false );
++			$deprecated_ver = get_site_option( 'popmake_version', false );
+ 
+-            $current_ver = $deprecated_ver ? $deprecated_ver : PUM::VER;
++			$current_ver = $deprecated_ver ? $deprecated_ver : PUM::VER;
+-            add_option( 'pum_ver', PUM::VER );
++			add_site_option( 'pum_ver', PUM::VER );
+ 
+-        }
++		}
+ 
+-        if ( version_compare( $current_ver, PUM::VER, '<' ) ) {
+-            // Save Upgraded From option
++		if ( version_compare( $current_ver, PUM::VER, '<' ) ) {
++			// Save Upgraded From option
+-            update_option( 'pum_ver_upgraded_from', $current_ver );
+-            update_option( 'pum_ver', PUM::VER );
++			update_site_option( 'pum_ver_upgraded_from', $current_ver );
++			update_site_option( 'pum_ver', PUM::VER );
+-        }
++		}
+ 
+-    }
++	}
+ 
+-    /**
+-     * Registers the pum-upgrades admin page.
+-     */
+-    public function register_pages() {
+-        global $pum_upgrades_page;
++	/**
++	 * Registers the pum-upgrades admin page.
++	 */
++	public function register_pages() {
++		global $pum_upgrades_page;
+-
+-        $parent = null;
+-
+-        if ( function_exists( 'is_network_admin' ) && is_network_admin() ) {
+-            add_menu_page(
+-                __( 'Popup Maker', 'popup-maker' ),
+-                __( 'Popup Maker', 'popup-maker' ),
+-                'manage_network_plugins',
+-                'popup-maker',
+-                '',
+-                POPMAKE_URL . '/assets/images/admin/dashboard-icon.png'
+-            );
+-            $parent = 'popup-maker';
+-        }
+-
+-        $this->page = add_submenu_page(
++		$this->page = add_submenu_page(
+-            $parent,
++			$this->is_network_admin() ? 'index.php' : null,
+-            __( 'Popup Maker Upgrades', 'popup-maker' ),
+-            __( 'Popup Maker Upgrades', 'popup-maker' ),
++			__( 'Popup Maker Upgrades', 'popup-maker' ),
++			__( 'Popup Maker Upgrades', 'popup-maker' ),
+-            'manage_options',
++			$this->required_cap(),
+-            'pum-upgrades',
++			'pum-upgrades',
+-            array( $this, 'upgrades_screen' )
++			array(
++				$this,
++				'upgrades_screen',
++			)
+-        );
++		);
+ 
+-        $pum_upgrades_page = $this->page;
+-    }
++		$pum_upgrades_page = $this->page;
++	}
+ 
++	public function get_site_list() {
++		$current_args = get_site_transient( 'pum-network-site-list-args' );
++		$current_list = get_site_transient( 'pum-network-site-list' );
++		$new_args = array(
++			'network_id' => null,
++			'limit'      => $this->get_arg( 'site_limit' ),
++			'offset'     => $this->get_arg( 'site_offset' ),
++		);
++
++		if ( ! $current_list || $current_args != $new_args ) {
++			$current_list = wp_get_sites( $new_args );
++			set_site_transient( 'pum-network-site-list', $current_list );
++			set_site_transient( 'pum-network-site-list-args', $current_args );
++		}
++
++		return $current_list;
++
++	}
++
++	public function get_current_blog_id() {
++		$list = $this->get_site_list();
++
++		if ( empty( $this->upgrade_args['site_index'] ) ) {
++			$this->upgrade_args['site_index'] = 0;
++		}
++
++		return $list[ $this->upgrade_args['site_index'] ]['blog_id'];
++	}
++
++	public function get_next_blog_id() {
++		$list = $this->get_site_list();
++
++		if ( empty( $this->upgrade_args['site_index'] ) ) {
++			$this->upgrade_args['site_index'] = 0;
++		}
++
++		$next_key = $this->upgrade_args['site_index'] + 1;
++
++		// If the current list is complete, get the next page and reset counts.
++		if ( ! isset ( $list[ $next_key ] ) && $next_key >= ( count( $list ) - 1 ) ) {
++			$this->step_up();
++		}
++
++		return $list[ $this->upgrade_args['site_index'] ]['blog_id'];
++	}
++
+-    /**
+-     * Process upgrade args.
+-     */
+-    public function process_upgrade_args() {
++	/**
++	 * Process upgrade args.
++	 */
++	public function process_upgrade_args() {
+ 
+-        $page = isset( $_GET['page'] ) ? $_GET['page'] : '';
++		$page = isset( $_GET['page'] ) ? $_GET['page'] : '';
+ 
+-        if ( ! ( defined( 'DOING_AJAX' ) && DOING_AJAX && $_REQUEST['action'] == 'pum_trigger_upgrades' ) && $page != 'pum-upgrades' ) {
++		if ( ! $this->is_network_ajax() && ! ( defined( 'DOING_AJAX' ) && DOING_AJAX && $_REQUEST['action'] == 'pum_trigger_upgrades' ) && $page != 'pum-upgrades' ) {
+-            return;
+-        }
++			return;
++		}
+ 
+-        $this->doing_upgrades = true;
++		$this->doing_upgrades = true;
+ 
+-        $action    = isset( $_REQUEST['pum-upgrade'] ) ? sanitize_text_field( $_REQUEST['pum-upgrade'] ) : $this->get_pum_db_ver() + 1;
+-        $step      = isset( $_REQUEST['step'] ) ? absint( $_REQUEST['step'] ) : 1;
+-        $total     = isset( $_REQUEST['total'] ) ? absint( $_REQUEST['total'] ) : false;
+-        $custom    = isset( $_REQUEST['custom'] ) ? absint( $_REQUEST['custom'] ) : 0;
+-        $number    = isset( $_REQUEST['number'] ) ? absint( $_REQUEST['number'] ) : 100;
+-        $completed = isset( $_REQUEST['completed'] ) ? absint( $_REQUEST['completed'] ) : false;
+-        $steps     = ceil( $total / $number );
++		$action    = isset( $_REQUEST['pum-upgrade'] ) ? sanitize_text_field( $_REQUEST['pum-upgrade'] ) : $this->get_pum_db_ver() + 1;
++		$step      = isset( $_REQUEST['step'] ) ? absint( $_REQUEST['step'] ) : 1;
++		$total     = isset( $_REQUEST['total'] ) ? absint( $_REQUEST['total'] ) : false;
++		$custom    = isset( $_REQUEST['custom'] ) ? absint( $_REQUEST['custom'] ) : 0;
++		$number    = isset( $_REQUEST['number'] ) ? absint( $_REQUEST['number'] ) : 100;
++		$completed = isset( $_REQUEST['completed'] ) ? absint( $_REQUEST['completed'] ) : false;
++		$steps     = ceil( $total / $number );
+ 
++
+-        if ( $step > $steps ) {
+-            // Prevent a weird case where the estimate was off. Usually only a couple.
+-            $steps = $step;
+-        }
++		if ( $step > $steps ) {
++			// Prevent a weird case where the estimate was off. Usually only a couple.
++			$steps = $step;
++		}
+ 
+-        $this->upgrade_args = array(
+-                'page'        => 'pum-upgrades',
+-                'pum-upgrade' => $action,
+-                'step'        => $step,
+-                'total'       => $total,
+-                'custom'      => $custom,
+-                'steps'       => $steps,
+-                'number'      => $number,
+-                'completed'   => $completed,
+-        );
++		$this->upgrade_args = array(
++			'page'        => 'pum-upgrades',
++			'pum-upgrade' => $action,
++			'step'        => $step,
++			'total'       => $total,
++			'custom'      => $custom,
++			'steps'       => $steps,
++			'number'      => $number,
++			'completed'   => $completed,
++		);
++		
++		if ( $this->is_network_admin_request() ) {
++			$this->upgrade_args['site_index']  = isset( $_REQUEST['site_index'] ) ? absint( $_REQUEST['site_index'] ) : 0;
++			$this->upgrade_args['site_total']  = isset( $_REQUEST['site_total'] ) ? absint( $_REQUEST['site_total'] ) : get_site_option( 'blog_count' );
++			$this->upgrade_args['site_limit']  = isset( $_REQUEST['site_limit'] ) ? absint( $_REQUEST['site_limit'] ) : 100;
++			$this->upgrade_args['site_offset'] = isset( $_REQUEST['site_offset'] ) ? absint( $_REQUEST['site_offset'] ) : 0;
++			// Hash key to verify the ajax comes from a verified network admin.
++			$this->upgrade_args['hash'] = wp_hash( 'pum-network-admin' );
++
++			update_site_option( 'pum_doing_network_upgrade', $this->upgrade_args );
++			update_blog_option ( $this->get_current_blog_id(), 'pum_doing_upgrade', $this->upgrade_args );
++		} else {
+-        update_option( 'pum_doing_upgrade', $this->upgrade_args );
++			update_option( 'pum_doing_upgrade', $this->upgrade_args );
++		}
+ 
+-    }
++	}
+ 
+-    /**
++	/**
+-     * Get upgrade arg.
++	 * Gets the pum_db_ver or sets and returns the correct one.
+-     *
++	 *
+-     * @param string $key
++	 * @see PUM_Upgrades::set_pum_db_ver()
+-     *
++	 *
+-     * @return bool|null
++	 * return $pum_db_ver
+-     */
++	 */
+-    public function set_arg( $key, $value = null ) {
++	public function get_pum_db_ver() {
+ 
+-        $this->upgrade_args[ $key ] = $value;
+-        if ( $key == 'number' || $key == 'total' ) {
+-            $this->upgrade_args['steps'] = ceil( $this->upgrade_args['total'] / $this->upgrade_args['number'] );
++		// this is the current database schema version number
++		$pum_db_ver = pum_get_db_ver();
++
++		if ( ! $pum_db_ver ) {
++			$this->set_pum_db_ver();
++			$pum_db_ver = pum_get_db_ver();
+-        }
++		}
+-        if ( $this->upgrade_args['step'] > $this->upgrade_args['steps'] ) {
+-            // Prevent a weird case where the estimate was off. Usually only a couple.
+-            $this->upgrade_args['steps'] = $this->upgrade_args['step'];
+-        } elseif ( $this->upgrade_args['step'] * $this->upgrade_args['steps'] ) {
+-            update_option( 'pum_doing_upgrade', $this->upgrade_args );
++
++		return preg_replace( '/[^0-9.].*/', '', $pum_db_ver );
+-        }
++	}
+ 
++	/**
++	 * Updates the pum_db_ver to the passed $version.
++	 *
++	 * If no $version is passed a default value will be established.
++	 *
++	 * @param null $version
++	 */
++	public function set_pum_db_ver( $version = null ) {
++
++		if ( $version ) {
++			$version = preg_replace( '/[^0-9.].*/', '', $version );
++			update_option( 'pum_db_ver', $version );
++
++			return;
+-    }
++		}
+ 
++		$upgraded_from = get_site_option( 'pum_ver_upgraded_from', false );
++
++		// this is the current database schema version number
++		$current_db_ver = pum_get_db_ver();
++
++		// If no current db version, but prior install detected, set db version correctly.
++		if ( ! $current_db_ver ) {
++			if ( $upgraded_from ) {
++				if ( version_compare( $upgraded_from, '1.3.0', '<' ) ) {
++					$current_db_ver = 1;
++				} else {
++					$current_db_ver = 2;
++				}
++			} else {
++				$current_db_ver = PUM::DB_VER;
++			}
++			add_option( 'pum_db_ver', $current_db_ver );
++		}
++
++	}
++
+-    /**
+-     * Get upgrade arg.
+-     *
+-     * @param string $key
+-     *
+-     * @return bool|null
+-     */
++	/**
++	 * Get upgrade arg.
++	 *
++	 * @param string $key
++	 *
++	 * @return bool|null
++	 */
+-    public function get_arg( $key = null ) {
++	public function set_arg( $key, $value = null ) {
+ 
+-        if ( ! $key ) {
+-            return null;
+-        }
++		$this->upgrade_args[ $key ] = $value;
+ 
+-        if ( ! isset( $this->upgrade_args[ $key ] ) ) {
+-            return false;
++		if ( $key == 'number' || $key == 'total' ) {
++			$this->upgrade_args['steps'] = ceil( $this->upgrade_args['total'] / $this->upgrade_args['number'] );
+-        }
++		}
+ 
+-        return $this->upgrade_args[ $key ];
+-
++		if ( $this->upgrade_args['step'] > $this->upgrade_args['steps'] ) {
++			// Prevent a weird case where the estimate was off. Usually only a couple.
++			$this->upgrade_args['steps'] = $this->upgrade_args['step'];
+-    }
++		}
+ 
+-    public function get_args() {
+-        return $this->upgrade_args;
++		if ( $this->is_network_admin_request() ) {
++			update_site_option( 'pum_doing_network_upgrade', $this->upgrade_args );
++			update_blog_option ( $this->get_current_blog_id(), 'pum_doing_upgrade', $this->upgrade_args );
++		} else {
++			update_option( 'pum_doing_upgrade', $this->upgrade_args );
+-    }
++		}
++	}
+ 
+-    public function doing_upgrades() {
+-        return $this->doing_upgrades;
+-    }
++	public function doing_upgrades() {
++		return $this->doing_upgrades;
++	}
+ 
+-    /**
+-     * Display Upgrade Notices
+-     *
+-     * @return void
+-     */
+-    public function show_upgrade_notices() {
++	/**
++	 * Display Upgrade Notices
++	 *
++	 * @return void
++	 */
++	public function show_upgrade_notices() {
+ 
+-        $screen = get_current_screen();
++		$screen = get_current_screen();
+ 
+-        if ( $screen->id == $this->page ) {
+-            return; // Don't show notices on the upgrades page
+-        }
++		if ( $screen->id == $this->page ) {
++			return; // Don't show notices on the upgrades page
++		}
+ 
+-        if ( ! $this->has_upgrades() ) {
+-            return;
+-        }
++		if ( ! $this->has_upgrades() ) {
++			return;
++		}
+ 
+-        // Sequential Orders was the first stepped upgrade, so check if we have a stalled upgrade
+-        $resume_upgrade = $this->maybe_resume_upgrade();
++		// Sequential Orders was the first stepped upgrade, so check if we have a stalled upgrade
++		$resume_upgrade = $this->maybe_resume_upgrade();
+ 
+-        if ( ! empty( $resume_upgrade ) ) {
++		if ( ! empty( $resume_upgrade ) ) {
+ 
+-            $resume_url = add_query_arg( $resume_upgrade, admin_url( 'index.php' ) );
+-            printf(
+-                    '<div class="error"><p>' . __( 'Popup Maker needs to complete a database upgrade that was previously started, click <a href="%s">here</a> to resume the upgrade.', 'popup-maker' ) . '</p></div>',
+-                    esc_url( $resume_url )
+-            );
++			printf( '<div class="error"><p>' . __( 'Popup Maker needs to complete a database upgrade that was previously started, click <a href="%s">here</a> to resume the upgrade.', 'popup-maker' ) . '</p></div>', esc_url( $this->get_resume_url() ) );
+ 
+-        } else {
++		} else {
+ 
+-            printf(
+-                    '<div class="error"><p><strong>%s:</strong> <span class="dashicons dashicons-warning" style="color: #dc3232;"></span> %s %s %s</p></div>',
+-                    __( 'Popup Maker', 'popup-maker' ),
+-                    __( 'Important', 'popup-maker' ),
+-                    __( 'Database upgrades required.', 'popup-maker' ),
+-                    sprintf(
+-                            __( 'Please click %shere%s to complete these changes now.', 'popup-maker' ),
+-                            '<a href="' . esc_url( admin_url( 'options.php?page=pum-upgrades' ) ) . '">',
+-                            '</a>'
+-                    )
+-            );
++			printf( '<div class="error"><p><strong>%s:</strong> <span class="dashicons dashicons-warning" style="color: #dc3232;"></span> %s %s %s</p></div>', __( 'Popup Maker', 'popup-maker' ), __( 'Important', 'popup-maker' ), __( 'Database upgrades required.', 'popup-maker' ), sprintf( __( 'Please click %shere%s to complete these changes now.', 'popup-maker' ), '<a href="' . esc_url( $this->get_upgrade_link() ) . '">', '</a>' ) );
+ 
+-        }
++		}
+ 
+-    }
++	}
+ 
+-    /**
++	/**
+-     * Triggers all upgrade functions
++	 * Returns true if there are unprocessed upgrades.
+-     *
++	 *
+-     * This function is usually triggered via AJAX
+-     *
+-     * @return void
++	 * @return bool
+-     */
++	 */
+-    public function trigger_upgrades() {
+-
+-        if ( ! current_user_can( 'manage_options' ) ) {
+-            wp_die( __( 'You do not have permission to do upgrades', 'popup-maker' ), __( 'Error', 'popup-maker' ), array( 'response' => 403 ) );
++	public function has_upgrades() {
++		return boolval( count( $this->get_upgrades() ) );
+-        }
++	}
+ 
+-        $deprecated_ver = get_site_option( 'popmake_version', false );
+-        $current_ver    = get_option( 'pum_ver', $deprecated_ver );
+-
+-        // Save Upgraded From option
+-        if ( $current_ver ) {
+-            update_option( 'pum_ver_upgraded_from', $current_ver );
+-        }
+-
+-        update_option( 'pum_ver', PUM::VER );
+-
+-        // Process DB Upgrades
+-        $this->process_upgrades();
+-
+-        if ( DOING_AJAX ) {
+-            echo json_encode( array(
+-                    'complete'  => true,
+-                    'status'    => sprintf(
+-                            '<strong>%s</strong><br/>%s',
+-                            __( 'Upgrades have been completed successfully.', 'popup-maker' ),
+-                            sprintf( 'You will automatically be redirected in %s seconds', '<span id="pum-countdown">5</span>' )
+-                    ),
+-                    'redirect'  => admin_url( 'index.php?page=pum-about' ),
+-                    'countdown' => 5000,
+-            ) ); // Let AJAX know that the upgrade is complete
+-            exit;
+-        }
+-    }
+-
+-    /**
++	/**
+-     * Updates the pum_db_ver to the passed $version.
++	 * For use when doing 'stepped' upgrade routines, to see if we need to start somewhere in the middle
+-     *
++	 *
+-     * If no $version is passed a default value will be established.
+-     *
+-     * @param null $version
++	 * @return mixed   When nothing to resume returns false, otherwise starts the upgrade where it left off
+-     */
++	 */
+-    public function set_pum_db_ver( $version = null ) {
++	public function maybe_resume_upgrade() {
+ 
+-        if ( $version ) {
+-            $version = preg_replace( '/[^0-9.].*/', '', $version );
+-            update_option( 'pum_db_ver', $version );
++		if ( $this->is_network_admin_request() ) {
++			$doing_upgrade = get_site_option( 'pum_doing_network_upgrade', false );
++		} else {
++			$doing_upgrade = get_option( 'pum_doing_upgrade', false );
++		}
+ 
+-            return;
++		if ( empty( $doing_upgrade ) ) {
++			return false;
+-        }
++		}
+ 
+-        $upgraded_from = get_option( 'pum_ver_upgraded_from', false );
++		return $doing_upgrade;
+ 
+-        // this is the current database schema version number
+-        $current_db_ver = pum_get_db_ver();
+-
+-        // If no current db version, but prior install detected, set db version correctly.
+-        if ( ! $current_db_ver ) {
+-            if ( $upgraded_from ) {
+-                if ( version_compare( $upgraded_from, '1.3.0', '<' ) ) {
+-                    $current_db_ver = 1;
+-                } else {
+-                    $current_db_ver = 2;
+-                }
++	}
+-            } else {
+-                $current_db_ver = PUM::DB_VER;
+-            }
+-            add_option( 'pum_db_ver', $current_db_ver );
+-        }
+ 
++	public function get_resume_url() {
++		$resume_upgrade = $this->maybe_resume_upgrade();
++
++		if ( empty( $resume_upgrade ) ) {
++			return '';
+-    }
++		}
+ 
+-    /**
+-     * Gets the pum_db_ver or sets and returns the correct one.
+-     *
+-     * @see PUM_Upgrades::set_pum_db_ver()
+-     *
+-     * return $pum_db_ver
+-     */
+-    public function get_pum_db_ver() {
++		$url = $this->is_network_admin() ? network_admin_url( 'admin.php' ) : admin_url( 'index.php' );
+ 
+-        // this is the current database schema version number
+-        $pum_db_ver = pum_get_db_ver();
++		return add_query_arg( $resume_upgrade, $url );
+ 
+-        if ( ! $pum_db_ver ) {
+-            $this->set_pum_db_ver();
+-            $pum_db_ver = pum_get_db_ver();
+-        }
++	}
+ 
+-        return preg_replace( '/[^0-9.].*/', '', $pum_db_ver );
++	public function get_upgrade_link() {
++		return $this->is_network_admin() ?
++			network_admin_url( 'admin.php?page=pum-upgrades' ) :
++			admin_url( 'options.php?page=pum-upgrades' );
+-    }
++	}
+ 
++	public function get_complete_link() {
++		return $this->is_network_admin() ?
++			network_admin_url( 'admin.php?page=pum-about' ) :
++			admin_url( 'index.php?page=pum-about' );
++	}
++
+-    /**
+-     * Process upgrades in a stepped succession.
+-     *
+-     * Starts with the current version and loops until reaching the target version.
+-     */
++	/**
++	 * Process upgrades in a stepped succession.
++	 *
++	 * Starts with the current version and loops until reaching the target version.
++	 */
+-    public function process_upgrades() {
++	public function get_upgrades() {
+ 
+-        // this is the target version that we need to reach
+-        $target_db_ver = PUM::DB_VER;
++		// this is the target version that we need to reach
++		$target_db_ver = PUM::DB_VER;
+ 
+-        // this is the current database schema version number
+-        $current_db_ver = $this->get_pum_db_ver();
++		// this is the current database schema version number
++		$current_db_ver = $this->get_pum_db_ver();
+ 
++		$upgrades = array();
++
+-        // Run upgrade routine until target version reached.
+-        while ( $current_db_ver < $target_db_ver ) {
++		// Run upgrade routine until target version reached.
++		while ( $current_db_ver < $target_db_ver ) {
+ 
+-            // increment the current db_ver by one
+-            $current_db_ver ++;
++			// increment the current db_ver by one
++			$current_db_ver ++;
+ 
+-            $this->current_routine = $current_db_ver;
+-
+-            $this->next_routine = $current_db_ver == $target_db_ver ? null : $current_db_ver + 1;
+-
+-            if ( file_exists( POPMAKE_DIR . "includes/admin/upgrades/class-pum-admin-upgrade-routine-{$current_db_ver}.php" ) ) {
++			if ( file_exists( POPMAKE_DIR . "includes/admin/upgrades/class-pum-admin-upgrade-routine-{$current_db_ver}.php" ) ) {
+ 
+-                require_once POPMAKE_DIR . "includes/admin/upgrades/class-pum-admin-upgrade-routine-{$current_db_ver}.php";
++				require_once POPMAKE_DIR . "includes/admin/upgrades/class-pum-admin-upgrade-routine-{$current_db_ver}.php";
+ 
+-                $func = "PUM_Admin_Upgrade_Routine_{$current_db_ver}::run";
+-                if ( is_callable( $func ) ) {
+-                    call_user_func( $func );
++				$class_name = "PUM_Admin_Upgrade_Routine_{$current_db_ver}";
++				$method     = "$class_name::description";
++				if ( class_exists( $class_name ) && is_callable( $method ) ) {
++					$class_name::set_upgrade_instance( $this );
++					$upgrades[ $current_db_ver ] = call_user_func( $method );
+-                }
++				}
+ 
+-            }
++			}
+ 
+-        }
++		}
+ 
++		return $upgrades;
+-    }
++	}
+ 
+-    public function current_routine() {
+-        return $this->current_routine;
++	/**
++	 * Triggers all upgrade functions
++	 *
++	 * This function is usually triggered via AJAX
++	 *
++	 * @return void
++	 */
++	public function trigger_upgrades() {
++
++		if ( ! current_user_can( $this->required_cap() ) ) {
++			wp_die( __( 'You do not have permission to do upgrades', 'popup-maker' ), __( 'Error', 'popup-maker' ), array( 'response' => 403 ) );
+-    }
++		}
+ 
+-    public function next_routine() {
+-        return $this->next_routine;
++		if ( $this->is_network_ajax() ) {
++			$current_site = get_current_blog_id();
++			switch_to_blog( $this->get_current_blog_id() );
+-    }
++		}
+ 
++		// Process DB Upgrades
++		$this->process_upgrades();
++
++		if ( $this->is_network_ajax() || ( defined( 'DOING_AJAX' ) && DOING_AJAX ) ) {
++			echo json_encode( array(
++				'complete'  => true,
++				'status'    => sprintf( '<strong>%s</strong><br/>%s', __( 'Upgrades have been completed successfully.', 'popup-maker' ), sprintf( 'You will automatically be redirected in %s seconds', '<span id="pum-countdown">5</span>' ) ),
++				'redirect'  => $this->get_complete_url(),
++				'countdown' => 5000,
++			) ); // Let AJAX know that the upgrade is complete
++			exit;
++		}
++	}
++
+-    /**
+-     * Process upgrades in a stepped succession.
+-     *
+-     * Starts with the current version and loops until reaching the target version.
+-     */
++	/**
++	 * Process upgrades in a stepped succession.
++	 *
++	 * Starts with the current version and loops until reaching the target version.
++	 */
+-    public function get_upgrades() {
++	public function process_upgrades() {
+ 
+-        // this is the target version that we need to reach
+-        $target_db_ver = PUM::DB_VER;
++		// this is the target version that we need to reach
++		$target_db_ver = PUM::DB_VER;
+ 
+-        // this is the current database schema version number
+-        $current_db_ver = $this->get_pum_db_ver();
++		// this is the current database schema version number
++		$current_db_ver = $this->get_pum_db_ver();
+ 
+-        $upgrades = array();
+-
+-        // Run upgrade routine until target version reached.
+-        while ( $current_db_ver < $target_db_ver ) {
++		// Run upgrade routine until target version reached.
++		while ( $current_db_ver < $target_db_ver ) {
+ 
+-            // increment the current db_ver by one
+-            $current_db_ver ++;
++			// increment the current db_ver by one
++			$current_db_ver ++;
+ 
++			$this->current_routine = $current_db_ver;
++
++			$this->next_routine = $current_db_ver == $target_db_ver ? null : $current_db_ver + 1;
++
+-            if ( file_exists( POPMAKE_DIR . "includes/admin/upgrades/class-pum-admin-upgrade-routine-{$current_db_ver}.php" ) ) {
++			if ( file_exists( POPMAKE_DIR . "includes/admin/upgrades/class-pum-admin-upgrade-routine-{$current_db_ver}.php" ) ) {
+ 
+-                require_once POPMAKE_DIR . "includes/admin/upgrades/class-pum-admin-upgrade-routine-{$current_db_ver}.php";
++				require_once POPMAKE_DIR . "includes/admin/upgrades/class-pum-admin-upgrade-routine-{$current_db_ver}.php";
+ 
+-                $func = "PUM_Admin_Upgrade_Routine_{$current_db_ver}::description";
+-                if ( is_callable( $func ) ) {
+-                    $upgrades[ $current_db_ver ] = call_user_func( $func );
+-                }
+ 
++				$class_name = "PUM_Admin_Upgrade_Routine_{$current_db_ver}";
++				$method     = "$class_name::run";
++				if ( class_exists( $class_name ) && is_callable( $method ) ) {
++					$class_name::set_upgrade_instance( $this );
++					call_user_func( $method );
+-            }
++				}
+ 
+-        }
++			}
+ 
+-        return $upgrades;
+-    }
++		}
+ 
+-    public function get_upgrade( $version = null ) {
+-        if ( isset ( $this->get_upgrades()[ $version ] ) ) {
+-            return $this->get_upgrades()[ $version ];
+-        } else {
+-            return false;
+-        }
++	}
+-    }
+ 
+-    /**
+-     * Returns true if there are unprocessed upgrades.
+-     *
+-     * @return bool
+-     */
+-    public function has_upgrades() {
+-        return boolval( count( $this->get_upgrades() ) );
++	public function current_routine() {
++		return $this->current_routine;
+-    }
++	}
+ 
+-    /**
+-     * For use when doing 'stepped' upgrade routines, to see if we need to start somewhere in the middle
+-     *
+-     * @return mixed   When nothing to resume returns false, otherwise starts the upgrade where it left off
+-     */
+-    public function maybe_resume_upgrade() {
+-
+-        $doing_upgrade = get_option( 'pum_doing_upgrade', false );
+-
+-        if ( empty( $doing_upgrade ) ) {
+-            return false;
++	public function next_routine() {
++		return $this->next_routine;
+-        }
++	}
+ 
+-        return $doing_upgrade;
+-
+-    }
+-
+-    /**
+-     * Adds an upgrade action to the completed upgrades array
+-     *
+-     * @param  string $upgrade_action The action to add to the competed upgrades array
+-     *
+-     * @return bool If the function was successfully added
+-     */
+-    public function set_upgrade_complete( $upgrade_action = '' ) {
++	/**
++	 * Adds an upgrade action to the completed upgrades array
++	 *
++	 * @param  string $upgrade_action The action to add to the competed upgrades array
++	 *
++	 * @return bool If the function was successfully added
++	 */
++	public function set_upgrade_complete( $upgrade_action = '' ) {
+ 
+-        if ( empty( $upgrade_action ) ) {
+-            return false;
+-        }
++		if ( empty( $upgrade_action ) ) {
++			return false;
++		}
+ 
++		delete_option( 'pum_doing_upgrade' );
++
+-        $completed_upgrades   = $this->get_completed_upgrades();
+-        $completed_upgrades[] = $upgrade_action;
++		$completed_upgrades   = $this->get_completed_upgrades();
++		$completed_upgrades[] = $upgrade_action;
+ 
+-        // Remove any blanks, and only show uniques
+-        $completed_upgrades = array_unique( array_values( $completed_upgrades ) );
++		// Remove any blanks, and only show uniques
++		$completed_upgrades = array_unique( array_values( $completed_upgrades ) );
+ 
+-        return update_option( 'pum_completed_upgrades', $completed_upgrades );
+-    }
++		return update_option( 'pum_completed_upgrades', $completed_upgrades );
++	}
+ 
+-    /**
++	/**
++	 * Get's the array of completed upgrade actions
++	 *
++	 * @return array The array of completed upgrades
++	 */
++	public function get_completed_upgrades() {
++
++		$completed_upgrades = get_option( 'pum_completed_upgrades' );
++
++		if ( false === $completed_upgrades ) {
++			$completed_upgrades = array();
++		}
++
++		return $completed_upgrades;
++
++	}
++
++	/**
+-     * Check if the upgrade routine has been run for a specific action
+-     *
+-     * @param  string $upgrade_action The upgrade action to check completion for
+-     *
++	 * Check if the upgrade routine has been run for a specific action
++	 *
++	 * @param  string $upgrade_action The upgrade action to check completion for
++	 *
+-     * @return bool                   If the action has been added to the copmleted actions array
++	 * @return bool If the action has been added to the completed actions array
+-     */
+-    public function has_upgrade_completed( $upgrade_action = '' ) {
++	 */
++	public function has_upgrade_completed( $upgrade_action = '' ) {
+ 
+-        if ( empty( $upgrade_action ) ) {
+-            return false;
+-        }
++		if ( empty( $upgrade_action ) ) {
++			return false;
++		}
+ 
+-        $completed_upgrades = $this->get_completed_upgrades();
++		$completed_upgrades = $this->get_completed_upgrades();
+ 
+-        return in_array( $upgrade_action, $completed_upgrades );
++		return in_array( $upgrade_action, $completed_upgrades );
+ 
+-    }
++	}
+ 
+-    /**
+-     * Get's the array of completed upgrade actions
+-     *
+-     * @return array The array of completed upgrades
+-     */
+-    public function get_completed_upgrades() {
+-
+-        $completed_upgrades = get_option( 'pum_completed_upgrades' );
+-
+-        if ( false === $completed_upgrades ) {
+-            $completed_upgrades = array();
+-        }
+-
+-        return $completed_upgrades;
+-
+-    }
+-
+-    public function step_up() {
+-        $step = $this->upgrade_args['step'];
+-        if ( $step >= $this->upgrade_args['steps'] ) {
+-            $this->upgrade_args['step'] = $this->upgrade_args['steps'];
++	public function step_up() {
++		$step = $this->upgrade_args['step'];
++		if ( $step >= $this->upgrade_args['steps'] ) {
++			$this->upgrade_args['step'] = $this->upgrade_args['steps'];
+ 
+-            return false;
+-        }
+-        $this->upgrade_args['step'] ++;
++			return false;
++		}
++		$this->upgrade_args['step'] ++;
+ 
+-        return true;
+-    }
++		return true;
++	}
+ 
+-    /**
+-     * Renders the upgrades screen.
+-     */
+-    public function upgrades_screen() { ?>
+-        <div class="wrap">
+-            <h2>
+-                <?php _e( 'Popup Maker - Upgrades', 'popup-maker' ); ?>
++	/**
++	 * Renders the upgrades screen.
++	 */
++	public function upgrades_screen() { ?>
++		<div class="wrap">
++			<h2>
++				<?php _e( 'Popup Maker - Upgrades', 'popup-maker' ); ?>
+-                <img src="<?php echo POPMAKE_URL . '/assets/images/admin/loading.gif'; ?>" id="pum-upgrade-loader"/>
++				<img src="<?php echo POPMAKE_URL . '/assets/images/admin/loading.gif'; ?>" id="pum-upgrade-loader" />
+-            </h2>
++			</h2>
+ 
+-            <style>
+-                #pum-upgrade-status {
+-                    max-height: 300px;
+-                    background: #fff;
+-                    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .5);
+-                    overflow-y: scroll;
+-                    text-overflow: ellipsis;
+-                    padding: 0 1.5em;
+-                }
+-            </style>
+-            <p>
+-                <?php _e( 'The upgrade process has started, please be patient. This could take several minutes. You will be automatically redirected when the upgrade is finished.', 'popup-maker' ); ?>
+-            </p>
+-            <div id="pum-upgrade-status"></div>
+-            <script type="text/javascript">
+-                (function ($, document, undefined) {
+-                    var $loader = $('#pum-upgrade-loader').hide(),
+-                            $status_box = $('#pum-upgrade-status'),
+-                            $timer,
+-                            timer = 500;
++			<style>
++				#pum-upgrade-status {
++					max-height: 300px;
++					background: #fff;
++					box-shadow: inset 0 1px 1px rgba(0, 0, 0, .5);
++					overflow-y: scroll;
++					text-overflow: ellipsis;
++					padding: 0 1.5em;
++				}
++			</style>
++			<p>
++				<?php _e( 'The upgrade process has started, please be patient. This could take several minutes. You will be automatically redirected when the upgrade is finished.', 'popup-maker' ); ?>
++			</p>
++			<div id="pum-upgrade-status"></div>
++			<script type="text/javascript">
++				(function ($, document, undefined) {
++					var $loader = $('#pum-upgrade-loader').hide(),
++						$status_box = $('#pum-upgrade-status'),
++						$timer,
++						timer = 500;
+ 
+-                    function update_status(message) {
+-                        $('<p>')
+-                                .html(message)
+-                                .appendTo($status_box);
++					function update_status(message) {
++						$('<p>')
++							.html(message)
++							.appendTo($status_box);
+ 
+-                        $status_box.animate({
+-                            scrollTop: $status_box.get(0).scrollHeight
+-                        }, {
+-                            duration: 'slow',
+-                            queue: false
+-                        });
+-                    }
++						$status_box.animate({
++							scrollTop: $status_box.get(0).scrollHeight
++						}, {
++							duration: 'slow',
++							queue: false
++						});
++					}
+ 
+-                    function countdown(timer, callback) {
+-                        var time_left = timer - 1000;
+-                        if (time_left >= 0) {
+-                            setTimeout(function () {
+-                                $timer.text(time_left / 1000);
+-                                countdown(time_left, callback);
+-                            }, 1000);
+-                        } else {
+-                            callback();
+-                        }
+-                    }
++					function countdown(timer, callback) {
++						var time_left = timer - 1000;
++						if (time_left >= 0) {
++							setTimeout(function () {
++								$timer.text(time_left / 1000);
++								countdown(time_left, callback);
++							}, 1000);
++						} else {
++							callback();
++						}
++					}
+ 
+-                    function next_step(args) {
++					function next_step(args) {
+ 
+-                        $loader.show();
++						$loader.show();
+ 
+-                        if (args === undefined) {
+-                            args = {};
+-                        }
++						if (args === undefined) {
++							args = {};
++						}
+ 
+-                        $.ajax({
+-                                    url: ajaxurl,
+-                                    data: $.extend({action: 'pum_trigger_upgrades'}, args),
+-                                    type: 'GET',
+-                                    dataType: 'json'
+-                                })
+-                                .done(function (response) {
++						$.ajax({
++								url: ajaxurl,
++								data: $.extend({action: 'pum_trigger_upgrades'}, args),
++								type: 'GET',
++								dataType: 'json'
++							})
++							.done(function (response) {
+ 
+-                                    if (response.status !== undefined) {
+-                                        update_status(response.status);
+-                                    }
++								if (response.status !== undefined) {
++									update_status(response.status);
++								}
+ 
+-                                    if (response.complete !== undefined) {
+-                                        $loader.hide();
+-                                    } else if (response.next !== undefined && typeof response.next === 'object') {
+-                                        next_step(response.next);
+-                                    }
++								if (response.complete !== undefined) {
++									$loader.hide();
++								} else if (response.next !== undefined && typeof response.next === 'object') {
++									next_step(response.next);
++								}
+ 
+-                                    if (response.redirect !== undefined) {
+-                                        if (response.countdown === undefined) {
+-                                            setTimeout(function () {
+-                                                document.location.href = response.redirect;
+-                                            }, timer);
+-                                        } else {
+-                                            $timer = $('#pum-countdown');
+-                                            countdown(response.countdown, function () {
+-                                                document.location.href = response.redirect;
+-                                            });
+-                                        }
+-                                    }
+-                                })
+-                                .fail(function () {
+-                                    update_status("<?php _e( 'Upgrade failed, please try again.', 'popup-maker' ); ?>");
+-                                });
+-                    }
++								if (response.redirect !== undefined) {
++									if (response.countdown === undefined) {
++										setTimeout(function () {
++											document.location.href = response.redirect;
++										}, timer);
++									} else {
++										$timer = $('#pum-countdown');
++										countdown(response.countdown, function () {
++											document.location.href = response.redirect;
++										});
++									}
++								}
++							})
++							.fail(function () {
++								update_status("<?php _e( 'Upgrade failed, please try again.', 'popup-maker' ); ?>");
++							});
++					}
+ 
+-                    $(document).ready(function () {
+-                        // Trigger upgrades on page load
+-                        next_step(<?php echo json_encode( $this->get_args() ); ?>);
+-                        update_status('<?php printf( '<strong>%s</strong>', $this->get_upgrade( $this->get_arg( 'pum-upgrade' ) ) ); ?>');
+-                    });
+-                }(jQuery, document));
+-            </script>
++					$(document).ready(function () {
++						// Trigger upgrades on page load
++						next_step(<?php echo json_encode( $this->get_args() ); ?>);
++						update_status('<?php printf( '<strong>%s</strong>', $this->get_upgrade( $this->get_arg( 'pum-upgrade' ) ) ); ?>');
++					});
++				}(jQuery, document));
++			</script>
+ 
+-        </div>
+-        <?php
++		</div>
++		<?php
++	}
++
++	public function get_args() {
++		return $this->upgrade_args;
++	}
++
++	public function get_upgrade( $version = null ) {
++		if ( isset ( $this->get_upgrades()[ $version ] ) ) {
++			return $this->get_upgrades()[ $version ];
++		} else {
++			return false;
++		}
++	}
++
++	/**
++	 * Get upgrade arg.
++	 *
++	 * @param string $key
++	 *
++	 * @return bool|null
++	 */
++	public function get_arg( $key = null ) {
++
++		if ( ! $key ) {
++			return null;
++		}
++
++		if ( ! isset( $this->upgrade_args[ $key ] ) ) {
++			return false;
++		}
++
++		return $this->upgrade_args[ $key ];
++
+-    }
++	}
+ 
+ }
+ 
+Index: wp-content/plugins/popup-maker/includes/admin/upgrades/class-pum-admin-upgrade-routine-3.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- wp-content/plugins/popup-maker/includes/admin/upgrades/class-pum-admin-upgrade-routine-3.php	(date 1460354639000)
++++ wp-content/plugins/popup-maker/includes/admin/upgrades/class-pum-admin-upgrade-routine-3.php	(revision )
+@@ -49,9 +49,8 @@
+ 			@set_time_limit( 0 );
+ 		}
+ 
+-		$upgrades  = PUM_Admin_Upgrades::instance();
+-		$completed = $upgrades->get_arg( 'completed' );
+-		$total     = $upgrades->get_arg( 'total' );
++		$completed = static::$upgrades->get_arg( 'completed' );
++		$total     = static::$upgrades->get_arg( 'total' );
+ 
+ 		// Set the correct total.
+ 		if ( $total <= 1 ) {
+@@ -60,12 +59,12 @@
+ 			foreach ( $popups as $status ) {
+ 				$total += $status;
+ 			}
+-			$upgrades->set_arg( 'total', $total );
++			static::$upgrades->set_arg( 'total', $total );
+ 		}
+ 
+ 		$popups = new PUM_Popup_Query( array(
+-			'number' => $upgrades->get_arg( 'number' ),
+-			'page'   => $upgrades->get_arg( 'step' ),
++			'number' => static::$upgrades->get_arg( 'number' ),
++			'page'   => static::$upgrades->get_arg( 'step' ),
+ 			'status' => array( 'any', 'trash', 'auto-draft' ),
+ 			'order'  => 'ASC',
+ 		) );
+@@ -171,7 +170,7 @@
+ 			}
+ 
+ 			if ( $completed < $total ) {
+-				$upgrades->set_arg( 'completed', $completed );
++				static::$upgrades->set_arg( 'completed', $completed );
+ 				static::next_step();
+ 			}
+ 
+\ No newline at end of file
+Index: wp-content/plugins/popup-maker/includes/admin/upgrades/class-pum-admin-upgrade-routine.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- wp-content/plugins/popup-maker/includes/admin/upgrades/class-pum-admin-upgrade-routine.php	(date 1460354639000)
++++ wp-content/plugins/popup-maker/includes/admin/upgrades/class-pum-admin-upgrade-routine.php	(revision )
+@@ -20,6 +20,15 @@
+ class PUM_Admin_Upgrade_Routine {
+ 
+ 	/**
++	 * @var PUM_Admin_Upgrades
++	 */
++	public static $upgrades;
++
++	public static function set_upgrade_instance( $upgrades ) {
++		static::$upgrades = $upgrades;
++	}
++
++	/**
+ 	 * Describe the upgrade routine.
+ 	 *
+ 	 * @return string
+@@ -33,8 +42,7 @@
+ 	 *
+ 	 * @return void
+ 	 */
+-	public static function run() {
+-	}
++	public static function run() {}
+ 
+ 	/**
+ 	 * Properly redirects or returns redirect url if DOING_AJAX.
+@@ -51,18 +59,17 @@
+ 	 */
+ 	public static function next_step() {
+ 
+-		$upgrades = PUM_Admin_Upgrades::instance();
++		static::$upgrades->step_up();
+ 
+-		$upgrades->step_up();
+-
+-		if ( defined( 'DOING_AJAX' ) && DOING_AJAX ) {
++		if ( static::$upgrades->is_network_ajax() || ( defined( 'DOING_AJAX' ) && DOING_AJAX ) ) {
+ 			echo json_encode( array(
+-				'status' => sprintf( __( 'Step %d of approximately %d running', 'popup-maker' ), $upgrades->get_arg( 'step' ), $upgrades->get_arg( 'steps' ) ),
+-				'next'   => $upgrades->get_args(),
++				'status' => sprintf( __( 'Step %d of approximately %d running', 'popup-maker' ), static::$upgrades->get_arg( 'step' ), static::$upgrades->get_arg( 'steps' ) ),
++				'next'   => static::$upgrades->get_args(),
+ 			) );
+ 			exit;
+ 		} else {
+-			$redirect = add_query_arg( $upgrades->get_args(), admin_url() );
++			$url = static::$upgrades->is_network_admin() ? network_admin_url() : admin_url();
++			$redirect = add_query_arg( static::$upgrades->get_args(), $url );
+ 			static::redirect( $redirect );
+ 		}
+ 
+@@ -70,26 +77,22 @@
+ 
+ 	public static function done() {
+ 
+-		$upgrades = PUM_Admin_Upgrades::instance();
++		static::$upgrades->set_upgrade_complete( static::$upgrades->current_routine() );
+ 
+-		delete_option( 'pum_doing_upgrade' );
++		static::$upgrades->set_pum_db_ver( static::$upgrades->get_arg( 'pum-upgrade' ) );
+ 
+-		$upgrades->set_upgrade_complete( $upgrades->current_routine() );
++		$next_routine = static::$upgrades->next_routine();
+ 
+-		$upgrades->set_pum_db_ver( $upgrades->get_arg( 'pum-upgrade' ) );
++		if ( static::$upgrades->has_upgrades() && $next_routine && static::$upgrades->get_upgrade( $next_routine ) ) {
++			if ( ( defined( 'DOING_AJAX' ) && DOING_AJAX ) ) {
+ 
+-		$next_routine = $upgrades->next_routine();
++				static::$upgrades->set_arg( 'step', 1 );
++				static::$upgrades->set_arg( 'completed', 0 );
++				static::$upgrades->set_arg( 'pum-upgrade', $next_routine );
+ 
+-		if ( $upgrades->has_upgrades() && $next_routine && $upgrades->get_upgrade( $next_routine ) ) {
+-			if ( defined( 'DOING_AJAX' ) && DOING_AJAX ) {
+-
+-				$upgrades->set_arg( 'step', 1 );
+-				$upgrades->set_arg( 'completed', 0 );
+-				$upgrades->set_arg( 'pum-upgrade', $next_routine );
+-
+ 				echo json_encode( array(
+-					'status' => sprintf( '<strong>%s</strong>', $upgrades->get_upgrade( $next_routine ) ),
+-					'next'   => $upgrades->get_args(),
++					'status' => sprintf( '<strong>%s</strong>', static::$upgrades->get_upgrade( $next_routine ) ),
++					'next'   => static::$upgrades->get_args(),
+ 				) );
+ 				exit;
+ 			} else {
+Index: wp-content/plugins/popup-maker/includes/admin/upgrades/class-pum-admin-upgrade-routine-4.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- wp-content/plugins/popup-maker/includes/admin/upgrades/class-pum-admin-upgrade-routine-4.php	(date 1460354639000)
++++ wp-content/plugins/popup-maker/includes/admin/upgrades/class-pum-admin-upgrade-routine-4.php	(revision )
+@@ -49,9 +49,8 @@
+ 			@set_time_limit( 0 );
+ 		}
+ 
+-		$upgrades  = PUM_Admin_Upgrades::instance();
+-		$completed = $upgrades->get_arg( 'completed' );
+-		$total     = $upgrades->get_arg( 'total' );
++		$completed = static::$upgrades->get_arg( 'completed' );
++		$total     = static::$upgrades->get_arg( 'total' );
+ 
+ 		// Set the correct total.
+ 		if ( $total <= 1 ) {
+@@ -60,12 +59,12 @@
+ 			foreach ( $popups as $status ) {
+ 				$total += $status;
+ 			}
+-			$upgrades->set_arg( 'total', $total );
++			static::$upgrades->set_arg( 'total', $total );
+ 		}
+ 
+ 		$popups = new PUM_Popup_Query( array(
+-			'number' => $upgrades->get_arg( 'number' ),
+-			'page'   => $upgrades->get_arg( 'step' ),
++			'number' => static::$upgrades->get_arg( 'number' ),
++			'page'   => static::$upgrades->get_arg( 'step' ),
+ 			'status' => array( 'any', 'trash', 'auto-draft' ),
+ 			'order'  => 'ASC',
+ 		) );
+@@ -138,7 +137,7 @@
+ 			}
+ 
+ 			if ( $completed < $total ) {
+-				$upgrades->set_arg( 'completed', $completed );
++				static::$upgrades->set_arg( 'completed', $completed );
+ 				static::next_step();
+ 			}
+ 
+\ No newline at end of file

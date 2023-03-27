@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>2019 &#8211; Bistec</title>
+	<atom:link href="https://www.bistec.com.br/tag/2019/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.bistec.com.br</link>
+	<description>Tecnologia para todo negócio</description>
+	<lastBuildDate>Fri, 08 Feb 2019 16:17:41 +0000</lastBuildDate>
+	<language>pt-BR</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.4.10</generator>
+	<item>
+		<title>Novo Blog Bistec! Boas-vindas novamente!</title>
+		<link>https://www.bistec.com.br/2019/01/17/novo-blog/</link>
+					<comments>https://www.bistec.com.br/2019/01/17/novo-blog/#respond</comments>
+		
+		<dc:creator><![CDATA[Fernando Barreira]]></dc:creator>
+		<pubDate>Thu, 17 Jan 2019 11:27:44 +0000</pubDate>
+				<category><![CDATA[Institucional]]></category>
+		<category><![CDATA[2019]]></category>
+		<category><![CDATA[newsletter]]></category>
+		<category><![CDATA[novidades]]></category>
+		<guid isPermaLink="false">https://www.bistec.com.br/?p=1074</guid>
+
+					<description><![CDATA[<p>Estamos felizes em apresentar o novo blog da Bistec. Voltamos a publicar as principais notícias em tecnologia, novidades e comunicados da Bistec e muitas outras novidades. Inscreva-se e receba essas novidades!</p>
+<p>O post <a rel="nofollow" href="https://www.bistec.com.br/2019/01/17/novo-blog/">Novo Blog Bistec! Boas-vindas novamente!</a> apareceu primeiro em <a rel="nofollow" href="https://www.bistec.com.br">Bistec</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>Estamos felizes em apresentar o novo blog da Bistec. Voltamos a publicar as principais notícias em tecnologia, novidades e comunicados da Bistec e muitas outras novidades.</p>
+<p>Inscreva-se e receba essas novidades!</p>
+<p>O post <a rel="nofollow" href="https://www.bistec.com.br/2019/01/17/novo-blog/">Novo Blog Bistec! Boas-vindas novamente!</a> apareceu primeiro em <a rel="nofollow" href="https://www.bistec.com.br">Bistec</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.bistec.com.br/2019/01/17/novo-blog/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

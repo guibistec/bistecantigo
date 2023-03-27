@@ -1,0 +1,820 @@
+/*
+ Theme Name:   Moesia Child
+ Theme URI:    http://bistec.com.br
+ Description:  Moesia Child Theme
+ Author:       Athemes
+ Author URI:   http://example.com
+ Template:     moesia
+ Version:      0.1
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, two-columns, parallax, responsive-layout, accessibility-ready
+ Text Domain:  moesia-child
+*/
+
+@charset "UTF-8";
+
+a:link{text-decoration: none !important;
+outline: none !important;}
+a:visited{text-decoration: none !important;
+outline: none !important;}
+a:hover{text-decoration: none !important;
+outline: none !important;}
+a:active{text-decoration: none !important;
+outline: none !important;}
+
+/* Para promoção Indique e Ganhe */
+
+.page-id-1140 #secondary {
+  display: none;
+}
+.page-id-1140 .content-area {
+  width: 100%;
+}
+.page-id-1140 div.first-form {
+	padding-right: 40px;
+	float: left;
+}
+.page-id-1140 div.second-form {
+	padding-top: 1px;
+	float: left;
+	clear: right;
+}
+.page-id-1140 input[type="submit"] {
+	float: left;
+	clear: left;
+	margin: 15px 0;
+	padding: 15px !important;
+}
+.page-id-1140 input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required {
+	width: 300px;
+}
+.page-id-1140 label {
+	font-weight: normal;
+	font-size: 12px;
+}
+.page-id-1140 div.first-form h1,
+.page-id-1140 div.second-form h1 {
+	font-size: 1.8em;
+	text-transform: uppercase;
+}
+.page-id-1140 .wpcf7-response-output {
+	float: left;
+	clear: none;
+}
+.page-id-1140 #gal_front_form_0 {
+	text-align: left;
+}
+
+/* Itens do rodapé, alinhamento responsivo */
+
+.parceiros_footer {
+	float: left;
+	margin-top: 50%;
+	padding: 10px 0 0;
+ 	position: relative;
+ 	margin: 3px;
+}
+
+.center-text {
+	width: 499px;
+	height: 500px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -250px;
+}
+
+.certificado {
+	width: 60%;
+	margin: auto;
+
+}
+
+/* Important! Fotos do clientes dos depoimentos */
+.client-photo {
+	border-radius: 50% !important;
+}
+
+/* Cor da flecha e desativação da sombra do ícone da flecha
+(Carrossel da seção Clients, onde estão os logos de Revenda Autorizada)*/
+
+.slick-prev:before, .slick-next:before { font-family: "FontAwesome"; font-size: 40px; line-height: 1; color: #016bb4; opacity: 0.85; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+
+/* Botões call-to-action */
+
+.welcome-button,
+.call-to-action {
+    box-shadow: 0 5px 0 #1a5781 !important;
+}
+
+.widget a,
+.widget a:link,
+.widget a:visited,
+.widget a:hover,
+.widget a:active{
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+.call-to-action a,
+.call-to-action a:link,
+.call-to-action a:visited,
+.call-to-action a:hover,
+.call-to-action a:active{
+  color:#fff !important;
+}
+
+
+.call-to-action:visited,
+.welcome-button:visited {
+  box-shadow: 0 5px 0 #1a5781 !important;
+  color:#fff !important;
+}
+.welcome-button:active,
+.call-to-action:active {
+	box-shadow: 0 2px 0 #1a5781 !important;
+  color:#fff !important;
+}
+
+.welcome-button a,
+.welcome-button a:link,
+.welcome-button a:visited,
+.welcome-button a:hover,
+.welcome-button a:active{
+  color:#fff !important;
+}
+
+
+/* Botões padrão */
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    box-shadow: 0 0px 0 #1a5781;
+    border-radius: 0px;
+}
+
+input[type="submit"].newsletter-submit  {
+  display: table !important;
+  border: 1px solid #fff !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
+  font-weight: 'Roboto Condensed', sans-serif !important;
+  font-size: 16px !important;
+  border-radius: 0px !important;
+  -webkit-transition: all 0.3s !important;
+  transition: all 0.3s !important;
+  padding: 15px 20px !important;
+}
+
+input[type="submit"].newsletter-submit,
+input[type="submit"].newsletter-submit:hover {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+input[type="submit"].newsletter-submit:hover {
+  box-shadow: 0 0 3px #fff !important;
+}
+
+/* Caixas de avisos customizadas e botão de Chat da nav-bar (themeless) */
+
+.attention-box {
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  color: #fff;
+  padding: 12px 13px 12px 13px;
+  text-decoration: none;
+}
+
+.attention-box.box1{
+  background: #fa1212 !important;
+  -webkit-box-shadow: 0px 6px 0px #eb0101 !important;
+  -moz-box-shadow: 0px 6px 0px #eb0101 !important;
+  box-shadow: 0px 6px 0px #eb0101 !important;
+  -moz-transition: all 0.3s ease !important;
+  -webkit-transition: all 0.3s ease !important;
+  -o-transition: all 0.3s ease !important;
+  transition: all 0.3s ease !important;
+}
+
+.attention-box.box1:hover{
+    background: #ff4141 !important;
+    -moz-transition: all 0.3s ease !important;
+    -webkit-transition: all 0.3s ease !important;
+    -o-transition: all 0.3s ease !important;
+    transition: all 0.3s ease !important;
+}
+
+.attention-box.box2{
+  background: #016BB4 !important;
+}
+
+.attention-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.attention-link:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.attention-link:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.attention-link:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+/* ================= Ripple Out - Efeito hover do botão de chat da nav bar ================= */
+
+    @-webkit-keyframes hvr-ripple-out {
+      100% {
+        top: -12px;
+        right: -12px;
+        bottom: -12px;
+        left: -12px;
+        opacity: 0;
+      }
+    }
+
+    @keyframes hvr-ripple-out {
+      100% {
+        top: -12px;
+        right: -12px;
+        bottom: -12px;
+        left: -12px;
+        opacity: 0;
+      }
+    }
+
+    .hvr-ripple-out {
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+      color: #fff !important;
+      padding: 2px 12px 2px 12px !important;
+      text-decoration: none !important;
+      background: #016BB4 !important;
+      -webkit-box-shadow: 0px 6px 0px #003b63;
+      -moz-box-shadow: 0px 6px 0px #003b63;
+      box-shadow: 0px 6px 0px #003b63;
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+    }
+
+    .hvr-ripple-out.other {
+      background: #ff2f2f !important;
+      -webkit-box-shadow: 0px 6px 0px #d02626;
+      -moz-box-shadow: 0px 6px 0px #d02626;
+      box-shadow: 0px 6px 0px #d02626;
+    }
+
+    .hvr-ripple-out:before,
+    .hvr-ripple-out.other:before {
+      -webkit-border-radius: 6px !important;
+      -moz-border-radius: 6px !important;
+      border-radius: 6px !important;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+    }
+    .hvr-ripple-out:before {
+      border: #016BB4 solid 6px;
+    }
+    .hvr-ripple-out.other:before {
+      border: #ff2f2f solid 6px;
+    }
+
+
+    .hvr-ripple-out:hover:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before,
+    .hvr-ripple-out.other:hover:before, .hvr-ripple-out.other:focus:before, .hvr-ripple-out.other:active:before {
+      -webkit-animation-name: hvr-ripple-out;
+      animation-name: hvr-ripple-out;
+    }
+
+
+  /* Deixando a barra de menu mais larga quando tiver novos itens
+
+div.site-branding.col-md-4 {
+  width: 28% !important;
+}
+
+.col-md-8 {
+width: auto !important;
+}
+
+@media (min-width: 992px)
+.col-md-4 {
+  width: 28% !important;
+}
+
+*/
+
+/* Alinhar nav bar principal */
+
+.main-navigation li {
+	line-height: 30px !important;
+  font-size: 11px !important;
+}
+
+/* Mais espaço para o menu nav bar */
+
+@media (min-width: 992px) {
+  .site-branding.col-md-4 {
+    width: 17%;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-navigation.col-md-8 {
+    width: 82%;
+  }
+}
+
+/* Botão da barra de procura (search bar)*/
+input[type="submit"] {
+  background-color: #016BB4;
+}
+
+
+/* Tamanho da fonte das seções to action button + cor do botão do Call-To-Action*/
+
+.action-text {
+    font-size: 16px;
+}
+button{
+    box-shadow: 0 5px 0 #003b63;
+}
+.welcome-button,
+.call-to-action {
+    box-shadow: 0 5px 0 #003b63;
+}
+.call-to-action:active {
+  box-shadow: 0 2px 0 #003b63;
+}
+
+
+/* Padding correto e decoração do título da seção de Softwares de Gestão */
+
+.panel-grid-cell section {
+  padding: 20px auto !important;
+  z-index: 999;
+}
+
+.panel.widget,
+.so-panel.widget {
+  padding: 0px 0px !important;
+}
+
+#pl-58 .panel-grid-cell .panel:last-child {
+   padding: 50px auto !important;
+}
+.action-area{
+   padding: 110px 10px 60px 10px !important;
+}
+.panel.widget .widget-title:after {
+    border-bottom: 6px double #016BB4 !important;
+}
+/* DESATIVADO - Título Softwares de Gestão - Troca de Cor
+
+#pgc-58-0-0 .widget-title{
+    color: #fff !important;
+}
+
+*/
+
+/* Anular a centralização de Employees para evitar problema na animação dos SVG de Sotwares de Gestão */
+.employees-area {
+	text-align: left !important;
+}
+
+
+/* Sem imagens de cabeçalho para mobiles (991px) */
+
+@media (max-width: 991px) {
+   .panel-row-style {
+     background-image: none !important;
+   }
+   .action-text {
+    color: #333333;
+   }
+   .bounce{
+    color: #333333;
+   }
+}
+
+/* Media queries (responsividade) para o título da primeira widget da front page */
+
+@media only screen and (max-width: 600px) {
+  .widget-title {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 499px) {
+  .widget-title {
+    font-size: 10px;
+  }
+}
+
+
+
+/* =================SVG EFFECT (Ramos de atividade)================= */
+
+      .clearfix:before,
+      .clearfix:after {
+        content: " ";
+        display: table;
+      }
+
+      .clearfix:after {
+        clear: both;
+      }
+
+      /* Common style */
+      .grid {
+        margin-left: 14%;
+        max-width: 810px;
+      }
+
+      .grid a {
+        float: left;
+        width: 270px;
+        height: 271px;
+        color: #333;
+      }
+
+      .grid a:nth-child(odd) {
+        margin: 0px 0 0px 0;
+      }
+
+      .grid figure {
+        position: relative;
+        margin: 5px;
+        background: #333;
+      }
+
+      .grid figure img {
+        position: relative;
+        display: block;
+        width: 270px;
+        height: 271px;
+        opacity: 0.7;
+        -webkit-transition: opacity 0.3s;
+        transition: opacity 0.3s;
+      }
+
+      .grid figcaption {
+        position: absolute;
+        top: 0;
+        z-index: 11;
+        padding: 5px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+      }
+
+      .grid figcaption h2 {
+        margin: 0px 0 5px 0;
+        color: #fff;
+        text-transform: uppercase;
+
+        font-weight: 300;
+        font-size: 300%;
+        -webkit-transition: -webkit-transform 0.3s;
+        transition: transform 0.3s;
+      }
+
+      .grid figcaption p {
+        padding: 0 0 10px 0;
+        text-transform: uppercase;
+        color: #fff;
+        font-family: Roboto, sans-serif !important;
+        font-size: 12px;
+        -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+        transition: opacity 0.3s, transform 0.3s;
+      }
+
+      .grid figcaption h2,
+      .grid figcaption p {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+      }
+
+      .grid figure button {
+        position: absolute;
+        padding: 4px 20px;
+        border: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: bold;
+        -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+        transition: opacity 0.3s, transform 0.3s;
+      }
+
+      .grid figcaption,
+      .grid figcaption h2,
+      .grid figcaption p,
+      .grid figure button {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      /* Style for SVG */
+      .grid svg {
+        position: absolute;
+        top: -1px; /* fixes rendering issue in FF */
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+      }
+
+      .grid svg path {
+        fill: #222;
+      }
+
+      /* Hover effects */
+      .grid a:hover figure img {
+        opacity: 1;
+      }
+
+      .grid a:hover figcaption h2,
+      .grid a:hover figcaption p {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+
+      .grid a:hover figcaption p {
+        opacity: 0;
+      }
+
+      /* Individual styles */
+
+      .demo-3 .grid figure button {
+        top: 50%;
+        left: 50%;
+        border: 3px solid #fff;
+        background: transparent;
+        color: #fff;
+        opacity: 0;
+        -webkit-transform: translateY(-50%) translateX(-50%) scale(0.25);
+        transform: translateY(-50%) translateX(-50%) scale(0.25);
+      }
+
+      .demo-3 .grid a:hover figure button {
+        opacity: 1;
+        -webkit-transform: translateY(-50%) translateX(-50%) scale(1);
+        transform: translateY(-50%) translateX(-50%) scale(1);
+      }
+
+      .demo-3 .grid figcaption h2,
+      .demo-3 .grid figcaption p {
+        -webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.115, 1); /* older webkit */
+        -webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.115, 1.445);
+        timing-function: cubic-bezier(0.250, 0.250, 0.115, 1.445);
+      }
+
+      .demo-3 .grid a:hover figcaption p {
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s;
+        -webkit-transition-duration: 0.1s;
+        transition-duration: 0.1s;
+      }
+
+      .demo-3 body {
+        background: #52be7f;
+      }
+
+      .demo-3 .grid figcaption h2 {
+        color: #52be7f;
+      }
+
+      .demo-3 .grid a:hover figcaption h2 {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+      }
+
+      /* Media Queries */
+      /* Let's redefine the width of each anchor and the margins */
+
+      @media screen and (max-width: 58em) {
+        .grid a {
+          width: 33.333%;
+        }
+
+        .grid a:nth-child(odd) {
+          margin: 0;
+        }
+
+        .grid a:nth-child(3n-1) {
+          margin: 30px 0 -30px 0;
+        }
+      }
+
+      @media screen and (max-width: 45em) {
+        .grid {
+          max-width: 500px;
+        }
+
+        .grid a {
+          width: 50%;
+        }
+
+        .grid a:nth-child(3n-1) {
+          margin: 0;
+        }
+
+        .grid a:nth-child(even) {
+          margin: 30px 0 -30px 0;
+        }
+
+
+        .grid figcaption h2 {
+          margin-bottom: 0px;
+          -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+        }
+
+        .grid figcaption p {
+          margin: 0;
+          padding: 0 10px;
+        }
+      }
+
+      @media screen and (max-width: 27em) {
+        .grid {
+          max-width: 250px;
+        }
+
+        .grid a {
+          width: 100%;
+        }
+
+        .grid a:nth-child(even) {
+          margin: 0;
+        }
+      }
+
+      /* Normalize SVG Effect */
+
+      article,aside,details,figcaption,figure,footer,header,
+      hgroup,main,nav,section,summary{display:block;}audio,canvas,
+      video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}
+      html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+      body{margin:0;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;margin:0.67em 0;}
+      abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:bold;}dfn{font-style:italic;}
+      hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}mark{background:#ff0;color:#000;}
+      code,kbd,pre,samp{font-family:monospace,serif;font-size:1em;}pre{white-space:pre-wrap;}q{quotes:"\201C" "\201D" "\2018" "\2019";}
+      small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}
+      sup{top:-0.5em;}sub{bottom:-0.25em;}img{border:0;}svg:not(:root){overflow:hidden;}figure{margin:0;}
+      fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}legend{border:0;padding:0;}
+      button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,
+      select{text-transform:none;}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}
+      button[disabled],html input[disabled]{cursor:default;}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}
+      input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}
+      input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}
+      button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}
+
+
+/************ FORMULÁRIO DE CONTATO (Contact7) *******/
+/* Mudar tamanho dos input e select do formulário de contato */
+
+
+#wpcf7-f982-o1 > form {
+  margin: 50px;
+}
+
+#wpcf7-f982-o1 > form > p:nth-child(2),
+#wpcf7-f982-o1 > form > p:nth-child(3),
+#wpcf7-f982-o1 > form > p:nth-child(4),
+#wpcf7-f982-o1 > form > p:nth-child(5),
+#wpcf7-f982-o1 > form > p:nth-child(6),
+#wpcf7-f982-o1 > form > p:nth-child(7) {
+	float:left;
+	text-align:left;
+  margin: 10px 20px;
+ 	width: 100%;
+  max-width: 300px;
+}
+
+select.wpcf7-form-control.wpcf7-select.wpcf7-validates-as-required {
+  padding: 15px;
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid #444;
+}
+
+#wpcf7-f982-o1 > form > p:nth-child(8) > input {
+  float:right;
+  clear:both !important;
+  margin: 10px 70px;
+}
+
+#wpcf7-f982-o1 > form > div.wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors,
+#wpcf7-f982-o1 > form > div.wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok {
+	float:left;
+  margin: 10px 20px;
+  width: 100%;
+  margin: auto;
+}
+
+@media (max-width: 730px) {
+  #wpcf7-f982-o1 > form > p:nth-child(2),
+  #wpcf7-f982-o1 > form > p:nth-child(3),
+  #wpcf7-f982-o1 > form > p:nth-child(4),
+  #wpcf7-f982-o1 > form > p:nth-child(5),
+  #wpcf7-f982-o1 > form > p:nth-child(6),
+  #wpcf7-f982-o1 > form > p:nth-child(7),
+  #wpcf7-f982-o1 > form > p:nth-child(8) > input{
+  	float: none;
+  	text-align: center;
+    margin: auto auto 10px auto;
+  }
+  #wpcf7-f982-o1 > form{
+    margin: 0;
+  }
+  #wpcf7-f982-o1 > form > div.wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors,
+  #wpcf7-f982-o1 > form > div.wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok {
+    margin:auto;
+  }
+}
+
+
+/* Texto animado da Home abaixo dos títulos */
+.action-text.home {
+  text-transform: none !important;
+}
+
+/* Botões padronizados, widgtes do Moesia */
+.all-news {
+  display: table !important;
+  margin: 50px auto 0 !important;
+  padding: 10px !important;
+  border: 1px solid #444 !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
+  font-weight: 'Roboto Condensed', sans-serif !important;
+  font-size: 16px !important;
+  -webkit-transition: all 0.3s !important;
+  transition: all 0.3s !important;
+}
+.all-news,
+.all-news:hover {
+  color: #444 !important;
+  text-decoration: none !important;
+}
+.all-news:hover {
+  box-shadow: 0 0 2px #444 !important;
+}
+
+/* Inscrever Newsletter na Página Inicial */
+div.tnp-field.tnp-field-email > label {
+  font-weight: normal;
+}
+
+div.tnp-field.tnp-field-button > input {
+  background-color: #016BB4;
+}
+
+div.tnp-field.tnp-field-email > input {
+  padding: 15px;
+  max-width: 100%;
+  border: 2px solid #444;
+  background-color: #fff;
+}
+
+/* Centralizar Softwares de Gestão */
+
+div#grid {
+    margin: 0 auto !important;
+}
+
+/* Tamanho da Moesia Extension Above Header (para inscrição de Newsletter)*/
+
+aside#text-8.widget.widget_text {
+    padding: 5px !important;
+    margin: 13px 0 0 !important;
+}

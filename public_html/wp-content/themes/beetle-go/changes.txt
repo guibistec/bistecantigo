@@ -1,0 +1,23 @@
+/*
+*	Read the included Documentation for
+*	informations on how to update.
+*/
+
+Beetle Go 1.0.2,
+18 July 2016:
+
+	Added Google Maps Api Key Theme Options.
+	@ /functions.php
+	@ /mokaine/framework/config.php
+
+Beetle Go 1.0.1,
+13 April 2016:
+
+	Improved WordPress 4.5 compatibility.
+	@ /js/beetle.js
+
+Beetle Go 1.0.0,
+01 February 2016:
+
+	Initial release.
+

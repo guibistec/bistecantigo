@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Backup &#8211; Bistec</title>
+	<atom:link href="https://www.bistec.com.br/tag/backup/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.bistec.com.br</link>
+	<description>Tecnologia para todo negócio</description>
+	<lastBuildDate>Fri, 11 Mar 2022 20:47:42 +0000</lastBuildDate>
+	<language>pt-BR</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.4.10</generator>
+	<item>
+		<title>Mantenha seus dados seguros. Faça Backup!</title>
+		<link>https://www.bistec.com.br/2022/03/02/qual-a-importancia-de-um-backup-hoje/</link>
+					<comments>https://www.bistec.com.br/2022/03/02/qual-a-importancia-de-um-backup-hoje/#respond</comments>
+		
+		<dc:creator><![CDATA[Gustavo Silva Salustiano]]></dc:creator>
+		<pubDate>Wed, 02 Mar 2022 03:01:00 +0000</pubDate>
+				<category><![CDATA[Bistec Update]]></category>
+		<category><![CDATA[Backup]]></category>
+		<category><![CDATA[Bistec Consultoria em TI]]></category>
+		<category><![CDATA[Bistec Soft]]></category>
+		<guid isPermaLink="false">https://www.bistec.com.br/?p=1708</guid>
+
+					<description><![CDATA[<p>Você sabe qual a importância de um backup? Conheça para o que serve e as melhores formas de faze-lo.</p>
+<p>O post <a rel="nofollow" href="https://www.bistec.com.br/2022/03/02/qual-a-importancia-de-um-backup-hoje/">Mantenha seus dados seguros. Faça Backup!</a> apareceu primeiro em <a rel="nofollow" href="https://www.bistec.com.br">Bistec</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p style="font-size:10px">Imagem 1 &#8211; tipos de backup &#8211; <a href="https://br.vexels.com/vetores/previsualizar/125478/fundo-verde-futurista-abstrato">Fundo vetor criado por vexels &#8211; br.vexels.com</a></p>
+
+
+
+<h2><strong><em>Qual a importância de um backup hoje?</em></strong></h2>
+
+
+
+<p>Atualmente quase tudo que fazemos no nosso dia a dia envolve tecnologia. Seja utilizando Smartphones, o GPS integrado a seu carro, consumindo conteúdo streaming na sua Smart TV, dentre outras coisas. Dessa forma, cada aspecto da nossa vida está ficando entrelaçado com a utilização de tecnologias para agilizar e facilitar as coisas.</p>
+
+
+
+<p>No ambiente corporativo isto não é diferente. Imagine como seria hoje em dia as pilhas de papéis necessárias para controlar as vendas da sua empresa e o faturamento de todas as contas sem a utilização de um sistema para gerenciá-los? Ou como seria não possuir redes sociais, sites ou qualquer meio das pessoas encontrarem sua empresa na internet?</p>
+
+
+
+<p>Hoje a utilização de sistemas informatizados se tornou algo imprescindível para a boa gestão e sucesso de qualquer empresa. Mas também é necessário tomar cuidado, existe uma máxima no mundo da informática de que “nenhum sistema é 100% seguro”. Mas não se preocupe, um backup pode salvar sua vida.</p>
+
+
+
+<p>Muitos sistemas hoje em dia funcionam totalmente na nuvem. Nestes casos o próprio fornecedor do sistema ou serviço costuma ficar responsável por garantir a realização e manutenção do backup. Mas para sistemas instalados localmente em seu computador, normalmente é você quem deve manter a segurança dos dados.</p>
+
+
+
+<h2><em><strong>Boas Práticas</strong></em> para backup</h2>
+
+
+
+<p>Independente do sistema que você esteja utilizando ou dos arquivos que deseja salvar, existem algumas boas práticas que podem ser seguidas para manter um bom backup. São algumas delas:</p>
+
+
+
+<p>&#8211;<strong><u>Manter em um local seguro</u></strong>: Não adianta nada você ter um backup do seu sistema, mas guardá-lo no mesmo computador onde está o sistema, pois caso haja uma pane você perderá o sistema e o backup. Portanto mantenha sempre seu backup em alguma unidade externa e segura como um pendrive, HD externo ou na nuvem.</p>
+
+
+
+<p>&#8211;<strong><u>Manter sempre atualizado</u></strong>: Você deve analisar qual o fluxo de inserção e alteração dos seus dados e dessa forma definir se o backup será feito mensalmente, semanalmente, diariamente ou até mesmo várias vezes no mesmo dia.</p>
+
+
+
+<p>&#8211;<strong><u>Possuir versionamento</u></strong>: Procure sempre manter mais de uma versão do seu backup. Caso aconteça algo com seu backup atual, como ele ficando inacessível ou algum arquivo dentro dele ter sido apagado antes da realização do último backup é imprescindível que você possua outras versões mais antigas para serem restauradas.</p>
+
+
+
+<p>&#8211;<strong><u>Testar sempre</u></strong>: Por último, mas não menos importante, já pensou ter um backup dos seus dados e ao precisar recuperá-los descobrir que ele estava salvando os arquivos errados? Por isso faça regularmente testes de restauração dos seus backups para ter certeza que estão funcionando.</p>
+
+
+
+<h2><strong><em>Backups automáticos na nuvem</em></strong></h2>
+
+
+
+<p>Pensando na melhor forma de manter seus dados seguros, a Bistec disponibiliza uma ferramenta de backup na nuvem 100% automatizada e segura.</p>
+
+
+
+<p>Com o <a href="https://bistec.backupmanager.info/">Bistec Cloud</a> é possível realizar o backup tanto do seu sistema quanto dos seus arquivos pessoais de forma automática em um servidor na nuvem com alta disponibilidade e recuperá-los quando quiser. Algumas das características deste serviço são:</p>
+
+
+
+<ul><li>Backups criptografados;</li><li>Agendamento personalizado para a realização dos backups;</li><li>Data centers World Class Tier III;</li><li>Realiza backups completos e incrementais;</li><li>Possui versionamento e retenção de dados personalizada;</li><li>Integração com os maiores bancos de dados do mercado (Oracle, MS SQL, MySQL, Postgre, Firebird, dentre outros);</li><li>Alta taxa de compressão para economia de espaço de armazenamento.</li></ul>
+
+
+
+<p>A ferramenta conta também com um portal para gerenciamento e você ainda conta com uma equipe técnica para te ajudar com qualquer problema que aconteça.</p>
+
+
+
+<p>Para mais informações acesse nosso site e conheça todo nosso <strong><a href="https://www.bistec.com.br/portfolio/">portfólio</a></strong>, voltado a atender você e sua empresa com o que há de melhor no mercado.</p>
+
+
+
+<hr class="wp-block-separator is-style-wide"/>
+
+
+
+<p style="font-size:14px">Texto criado por Gustavo Salustiano<br>Técnico em T.I.<br><img class="wp-image-1630" style="width: 150px;" src="https://www.bistec.com.br/wp-content/uploads/2022/01/Gustavo-Salustiano_funcionario.jpg" alt="Funcionário Gustavo Salustiano" srcset="https://www.bistec.com.br/wp-content/uploads/2022/01/Gustavo-Salustiano_funcionario.jpg 1200w, https://www.bistec.com.br/wp-content/uploads/2022/01/Gustavo-Salustiano_funcionario-229x300.jpg 229w, https://www.bistec.com.br/wp-content/uploads/2022/01/Gustavo-Salustiano_funcionario-783x1024.jpg 783w, https://www.bistec.com.br/wp-content/uploads/2022/01/Gustavo-Salustiano_funcionario-768x1005.jpg 768w, https://www.bistec.com.br/wp-content/uploads/2022/01/Gustavo-Salustiano_funcionario-1174x1536.jpg 1174w, https://www.bistec.com.br/wp-content/uploads/2022/01/Gustavo-Salustiano_funcionario-640x837.jpg 640w" sizes="(max-width: 1200px) 100vw, 1200px" /></p>
+<p>O post <a rel="nofollow" href="https://www.bistec.com.br/2022/03/02/qual-a-importancia-de-um-backup-hoje/">Mantenha seus dados seguros. Faça Backup!</a> apareceu primeiro em <a rel="nofollow" href="https://www.bistec.com.br">Bistec</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.bistec.com.br/2022/03/02/qual-a-importancia-de-um-backup-hoje/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

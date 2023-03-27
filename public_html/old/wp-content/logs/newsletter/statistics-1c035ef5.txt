@@ -1,0 +1,2 @@
+02-02-2017 13:07:54 - ERROR - m: 68,7 MB, u: 0 - Open tracking request for unexistant email
+28-03-2017 12:25:56 - ERROR - m: 68,7 MB, u: 0 - Open tracking request for unexistant email

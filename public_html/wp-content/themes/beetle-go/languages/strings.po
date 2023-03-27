@@ -1,0 +1,4310 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Beetle Go\n"
+"POT-Creation-Date: 2016-02-04 19:24+0100\n"
+"PO-Revision-Date: 2016-02-04 19:24+0100\n"
+"Last-Translator: Pasquale Vitiello <pasqualevitiello@gmail.com>\n"
+"Language-Team: Pasquale Vitiello <pasqualevitiello@gmail.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:23
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:25
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: archive.php:33
+#, php-format
+msgid "Posts published by %s"
+msgstr ""
+
+#: archive.php:36 archive.php:39 archive.php:42
+#, php-format
+msgid "Posts published on %s"
+msgstr ""
+
+#: archive.php:39
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: archive.php:42
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: archive.php:45
+msgid "Asides"
+msgstr ""
+
+#: archive.php:48
+msgid "Galleries"
+msgstr ""
+
+#: archive.php:51
+msgid "Images"
+msgstr ""
+
+#: archive.php:54
+msgid "Videos"
+msgstr ""
+
+#: archive.php:57
+msgid "Quotes"
+msgstr ""
+
+#: archive.php:60
+msgid "Links"
+msgstr ""
+
+#: archive.php:63
+msgid "Statuses"
+msgstr ""
+
+#: archive.php:66
+msgid "Audios"
+msgstr ""
+
+#: archive.php:69
+msgid "Chats"
+msgstr ""
+
+#: archive.php:72
+msgid "Archives"
+msgstr ""
+
+#: comments.php:13
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:21 comments.php:41
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:22 comments.php:42
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:23 comments.php:43
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:55
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:67
+msgid "Please, be kind!"
+msgstr ""
+
+#: comments.php:69
+msgid "Your Name"
+msgstr ""
+
+#: comments.php:70
+msgid "Your@Email.com"
+msgstr ""
+
+#: comments.php:71
+msgid "Your Website or Profile"
+msgstr ""
+
+#: content-none.php:3
+msgid "Nothing Found"
+msgstr ""
+
+#: content-none.php:9
+#, php-format
+msgid ""
+"Ready to publish your first portfolio item? <a href=\"%1$s\">Get started "
+"here</a>."
+msgstr ""
+
+#: content-none.php:13
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: content-none.php:19
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: content-none.php:25
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: content-page.php:13 full-article.php:31 full-item.php:29
+msgid "Edit"
+msgstr ""
+
+#: functions.php:27
+msgid "Header Menu"
+msgstr ""
+
+#: header.php:88
+msgid "No menu assigned"
+msgstr ""
+
+#: listed-article-masonry.php:65 listed-article.php:47
+msgid "Continue reading ..."
+msgstr ""
+
+#: listed-article.php:55
+msgid "Pages:"
+msgstr ""
+
+#: listed-search.php:31 mokaine/includes/custom-types.php:13
+msgid "Portfolio Item"
+msgstr ""
+
+#: listed-search.php:37
+msgid "Blog Post"
+msgstr ""
+
+#: listed-search.php:41
+msgid "Page"
+msgstr ""
+
+#: mokaine/framework/config.php:108
+msgid "Section via hook"
+msgstr ""
+
+#: mokaine/framework/config.php:109
+msgid ""
+"<p class=\"description\">This is a section created by adding a filter to the "
+"sections array. Can be used by child themes to add/remove sections from the "
+"options.</p>"
+msgstr ""
+
+#: mokaine/framework/config.php:189
+#, php-format
+msgid "Customize &#8220;%s&#8221;"
+msgstr ""
+
+#: mokaine/framework/config.php:198 mokaine/framework/config.php:202
+msgid "Current theme preview"
+msgstr ""
+
+#: mokaine/framework/config.php:209
+#, php-format
+msgid "By %s"
+msgstr ""
+
+#: mokaine/framework/config.php:210
+#: mokaine/framework/inc/welcome/views/about.php:8
+#: mokaine/framework/inc/welcome/views/changelog.php:8
+#: mokaine/framework/inc/welcome/views/credits.php:8
+#: mokaine/framework/inc/welcome/views/extensions.php:82
+#: mokaine/framework/inc/welcome/views/status_report.php:31
+#: mokaine/framework/inc/welcome/views/support.php:8
+#, php-format
+msgid "Version %s"
+msgstr ""
+
+#: mokaine/framework/config.php:211
+msgid "Tags"
+msgstr ""
+
+#: mokaine/framework/config.php:216
+#, php-format
+msgid "This <a href=\"%1$s\">child theme</a> requires its parent theme, %2$s."
+msgstr ""
+
+#: mokaine/framework/config.php:216
+msgid "http://codex.wordpress.org/Child_Themes"
+msgstr ""
+
+#: mokaine/framework/config.php:240
+msgid "General settings"
+msgstr ""
+
+#: mokaine/framework/config.php:245
+msgid "Custom favicon"
+msgstr ""
+
+#: mokaine/framework/config.php:246
+msgid ""
+"Upload a 16px x 16px Png/Gif image that will represent your website favicon"
+msgstr ""
+
+#: mokaine/framework/config.php:251
+msgid "Dribbble token"
+msgstr ""
+
+#: mokaine/framework/config.php:252
+msgid ""
+"Set your Dribbble app&lsquo;s client access token if you wish to use the "
+"Dribbble shortcode. If you do not have a token, <a href=\"https://dribbble."
+"com/account/applications/new\" target=\"_blank\">create a new Dribbble app</"
+"a>. Read the documentation for further details."
+msgstr ""
+
+#: mokaine/framework/config.php:257
+msgid "Tracking code"
+msgstr ""
+
+#: mokaine/framework/config.php:258
+msgid ""
+"Paste your Google Analytics (or other) tracking code here. This will be "
+"added into the footer template of your theme."
+msgstr ""
+
+#: mokaine/framework/config.php:266
+msgid "Enable update notifications"
+msgstr ""
+
+#: mokaine/framework/config.php:267
+msgid "Decide if you wish to receive notifications on theme updates."
+msgstr ""
+
+#: mokaine/framework/config.php:281
+msgid "Header &amp; Logo"
+msgstr ""
+
+#: mokaine/framework/config.php:282
+msgid "Header &amp; logo settings"
+msgstr ""
+
+#: mokaine/framework/config.php:287
+msgid "Header style"
+msgstr ""
+
+#: mokaine/framework/config.php:288
+msgid "Choose the style you wish to use"
+msgstr ""
+
+#: mokaine/framework/config.php:300
+msgid "Parallax"
+msgstr ""
+
+#: mokaine/framework/config.php:301
+msgid "Parallax scrolling effect on intros"
+msgstr ""
+
+#: mokaine/framework/config.php:302
+msgid ""
+"NOTE: When parallax is Off, <em>Header Style</em> options have no effect "
+"(the header will be white solid with black typography)"
+msgstr ""
+
+#: mokaine/framework/config.php:310
+msgid "Footer"
+msgstr ""
+
+#: mokaine/framework/config.php:311
+msgid "Footer settings"
+msgstr ""
+
+#: mokaine/framework/config.php:316
+msgid "Enable footer"
+msgstr ""
+
+#: mokaine/framework/config.php:317
+msgid "Enable the footer widgets section"
+msgstr ""
+
+#: mokaine/framework/config.php:323
+msgid "Bottom left notes"
+msgstr ""
+
+#: mokaine/framework/config.php:330
+msgid "Bottom right notes"
+msgstr ""
+
+#: mokaine/framework/config.php:336
+msgid "Footer layout"
+msgstr ""
+
+#: mokaine/framework/config.php:337
+msgid "Select the footer column layout"
+msgstr ""
+
+#: mokaine/framework/config.php:357 mokaine/includes/register-widgets.php:23
+msgid "Sidebar"
+msgstr ""
+
+#: mokaine/framework/config.php:358
+msgid "Sidebar settings"
+msgstr ""
+
+#: mokaine/framework/config.php:363
+msgid "Sidebar on blog pages"
+msgstr ""
+
+#: mokaine/framework/config.php:364
+msgid ""
+"Enable to display the sidebar on blog pages (not available on Masonry style)"
+msgstr ""
+
+#: mokaine/framework/config.php:370
+msgid "Sidebar on blog posts"
+msgstr ""
+
+#: mokaine/framework/config.php:371
+msgid "Enable to display the sidebar on post pages"
+msgstr ""
+
+#: mokaine/framework/config.php:377
+msgid "Sidebar on pages"
+msgstr ""
+
+#: mokaine/framework/config.php:378
+msgid ""
+"Enable to display the sidebar on pages (i.e. pages, 404, archive pages, etc.)"
+msgstr ""
+
+#: mokaine/framework/config.php:386
+msgid "Blog settings"
+msgstr ""
+
+#: mokaine/framework/config.php:391
+msgid "Show excerpts"
+msgstr ""
+
+#: mokaine/framework/config.php:392
+msgid "Enable to display excerpts on blog pages"
+msgstr ""
+
+#: mokaine/framework/config.php:398
+msgid "Masonry settings"
+msgstr ""
+
+#: mokaine/framework/config.php:399
+msgid "Enable to show the first post bigger on blog shortcode"
+msgstr ""
+
+#: mokaine/framework/config.php:405
+msgid "Show post navigation"
+msgstr ""
+
+#: mokaine/framework/config.php:406
+msgid "Enable to display navigation links on blog posts"
+msgstr ""
+
+#: mokaine/framework/config.php:412
+msgid "Show author bio"
+msgstr ""
+
+#: mokaine/framework/config.php:413
+msgid "Enable to display the author box at the bottom of the article"
+msgstr ""
+
+#: mokaine/framework/config.php:419
+msgid "Show related posts"
+msgstr ""
+
+#: mokaine/framework/config.php:420
+msgid "Enable to display related posts at the bottom of the article"
+msgstr ""
+
+#: mokaine/framework/config.php:428
+msgid "Portfolio settings"
+msgstr ""
+
+#: mokaine/framework/config.php:433
+msgid "Show filter tags"
+msgstr ""
+
+#: mokaine/framework/config.php:434
+msgid "Enable to display filter tags on portfolio pages"
+msgstr ""
+
+#: mokaine/framework/config.php:440
+msgid "Show item navigation"
+msgstr ""
+
+#: mokaine/framework/config.php:441
+msgid "Enable to display navigation links on portfolio items"
+msgstr ""
+
+#: mokaine/framework/config.php:447 mokaine/meta/meta-config.php:447
+msgid "Portfolio sidebar widgets"
+msgstr ""
+
+#: mokaine/framework/config.php:449
+msgid "Choose a title for any custom widget to be showed on portfolio items"
+msgstr ""
+
+#: mokaine/framework/config.php:454
+msgid "Show related items"
+msgstr ""
+
+#: mokaine/framework/config.php:455
+msgid "Enable to display related items at the bottom of the post"
+msgstr ""
+
+#: mokaine/framework/config.php:463
+msgid "Font options"
+msgstr ""
+
+#: mokaine/framework/config.php:470
+msgid "Unlock this panel!"
+msgstr ""
+
+#: mokaine/framework/config.php:471
+msgid ""
+"The Font options panel is not available in Beetle Go. Purchase <a href="
+"\"http://mokaine.com/beetle-pro-wordpress-theme/\">Beetle Pro</a> to unlock "
+"it!"
+msgstr ""
+
+#: mokaine/framework/config.php:478
+msgid "Font size options"
+msgstr ""
+
+#: mokaine/framework/config.php:479
+msgid ""
+"Beetle typography has been built using <code>em</code> measurement unit. "
+"Em’s is a \"relative\" sizing technique, so it can be useful when you "
+"control the sizing of your page as completely relative to other things on "
+"your page. <a href=\"http://www.w3schools.com/cssref/css_units.asp\" target="
+"\"_blank\">Click here</a> to know more about CSS units.<br><br>Before "
+"setting <code>em</code> values, we need to tell Beetle what is the "
+"<strong>base font size</strong> in <code>px</code> to be applied on the body "
+"tag: all the other <code>em</code> values will adjust on that value"
+msgstr ""
+
+#: mokaine/framework/config.php:484
+msgid "Base font size"
+msgstr ""
+
+#: mokaine/framework/config.php:485
+msgid "Set the base font size in px"
+msgstr ""
+
+#: mokaine/framework/config.php:486
+msgid ""
+"Default value is <code>18px</code>. Set an higher value to make all bigger "
+"or vice versa"
+msgstr ""
+
+#: mokaine/framework/config.php:497
+msgid "Small screens font size"
+msgstr ""
+
+#: mokaine/framework/config.php:498
+msgid "Set the base font size in px for small devices"
+msgstr ""
+
+#: mokaine/framework/config.php:499
+msgid ""
+"Default value is <code>16px</code>. Set an higher value to make all bigger "
+"or vice versa"
+msgstr ""
+
+#: mokaine/framework/config.php:510
+msgid ""
+"Now that you have set the <strong>base font size</strong> in <code>px</"
+"code>, you can adjust the font size of each heading tag"
+msgstr ""
+
+#: mokaine/framework/config.php:515
+msgid "H1 size"
+msgstr ""
+
+#: mokaine/framework/config.php:516
+msgid "Set h1 tags font size in em"
+msgstr ""
+
+#: mokaine/framework/config.php:517
+msgid "Default value is <code>2.369em</code>"
+msgstr ""
+
+#: mokaine/framework/config.php:528
+msgid "H2 size"
+msgstr ""
+
+#: mokaine/framework/config.php:529
+msgid "Set h2 tags font size in em"
+msgstr ""
+
+#: mokaine/framework/config.php:530
+msgid "Default value is <code>1.777em</code>"
+msgstr ""
+
+#: mokaine/framework/config.php:541
+msgid "H3 size"
+msgstr ""
+
+#: mokaine/framework/config.php:542
+msgid "Set h3 tags font size in em"
+msgstr ""
+
+#: mokaine/framework/config.php:543
+msgid "Default value is <code>1.333em</code>"
+msgstr ""
+
+#: mokaine/framework/config.php:554
+msgid "H4 size"
+msgstr ""
+
+#: mokaine/framework/config.php:555
+msgid "Set h4 tags font size in em"
+msgstr ""
+
+#: mokaine/framework/config.php:556
+msgid "Default value is <code>1em</code>"
+msgstr ""
+
+#: mokaine/framework/config.php:567
+msgid "H5 size"
+msgstr ""
+
+#: mokaine/framework/config.php:568
+msgid "Set h5 tags font size in em"
+msgstr ""
+
+#: mokaine/framework/config.php:569
+msgid "Default value is <code>0.75em</code>"
+msgstr ""
+
+#: mokaine/framework/config.php:580
+msgid "H6 size"
+msgstr ""
+
+#: mokaine/framework/config.php:581
+msgid "Set h6 tags font size in em"
+msgstr ""
+
+#: mokaine/framework/config.php:582
+msgid "Default value is <code>0.563em</code>"
+msgstr ""
+
+#: mokaine/framework/config.php:593
+msgid "Finally, adjust the <strong>line-height</strong> if you really need to"
+msgstr ""
+
+#: mokaine/framework/config.php:598
+msgid "Body line height"
+msgstr ""
+
+#: mokaine/framework/config.php:599
+msgid "Set the body line-height"
+msgstr ""
+
+#: mokaine/framework/config.php:600
+msgid "Default value is <code>1.8</code>"
+msgstr ""
+
+#: mokaine/framework/config.php:611
+msgid "Headings line height"
+msgstr ""
+
+#: mokaine/framework/config.php:612
+msgid "Set the headings line-height"
+msgstr ""
+
+#: mokaine/framework/config.php:613
+msgid "Default value is <code>1.34</code>"
+msgstr ""
+
+#: mokaine/framework/config.php:626
+msgid "Style settings"
+msgstr ""
+
+#: mokaine/framework/config.php:631
+msgid "Primary color"
+msgstr ""
+
+#: mokaine/framework/config.php:632
+msgid "Set the primary color (links, icons, etc.)"
+msgstr ""
+
+#: mokaine/framework/config.php:633 mokaine/framework/config.php:642
+msgid "Try our pre-picked colors in the palette!"
+msgstr ""
+
+#: mokaine/framework/config.php:640
+msgid "Secondary color"
+msgstr ""
+
+#: mokaine/framework/config.php:641
+msgid "Set the secondary color (thumbnail color on hover, etc.)"
+msgstr ""
+
+#: mokaine/framework/config.php:649
+msgid "Intro background color"
+msgstr ""
+
+#: mokaine/framework/config.php:650 mokaine/framework/config.php:659
+msgid "Pick a background color"
+msgstr ""
+
+#: mokaine/framework/config.php:658
+msgid "Footer background color"
+msgstr ""
+
+#: mokaine/framework/config.php:667
+msgid "Footer text color"
+msgstr ""
+
+#: mokaine/framework/config.php:668
+msgid "Pick a color for the footer links"
+msgstr ""
+
+#: mokaine/framework/config.php:676
+msgid "Image corners"
+msgstr ""
+
+#: mokaine/framework/config.php:677
+msgid "Use the slider to round image corners"
+msgstr ""
+
+#: mokaine/framework/config.php:678
+msgid "<code>em</code> value associated to border-radius"
+msgstr ""
+
+#: mokaine/framework/config.php:691
+msgid "Custom code"
+msgstr ""
+
+#: mokaine/framework/config.php:696
+msgid "Custom CSS"
+msgstr ""
+
+#: mokaine/framework/config.php:697
+msgid "Paste here your custom CSS code"
+msgstr ""
+
+#: mokaine/framework/config.php:705
+msgid "Custom JS"
+msgstr ""
+
+#: mokaine/framework/config.php:706
+msgid ""
+"Paste here your custom jQuery code.<br><br>No need to add "
+"<em>jQuery(document).ready(function($) {</em> ..."
+msgstr ""
+
+#: mokaine/framework/config.php:715
+#: mokaine/framework/inc/extensions/import_export/extension_import_export.php:120
+msgid "Import / Export"
+msgstr ""
+
+#: mokaine/framework/config.php:716
+msgid "Import and Export your Redux Framework settings from file, text or URL"
+msgstr ""
+
+#: mokaine/framework/config.php:735
+msgid "Theme Information"
+msgstr ""
+
+#: mokaine/framework/config.php:736
+msgid ""
+"<p class=\"description\">A powerful WordPress theme for Designers, "
+"Photographers and Storytellers.</p>"
+msgstr ""
+
+#: mokaine/framework/config.php:749 mokaine/framework/config.php:895
+msgid "Documentation"
+msgstr ""
+
+#: mokaine/framework/config.php:794 mokaine/framework/config.php:795
+msgid "Beetle Go Options"
+msgstr ""
+
+#: mokaine/framework/config.php:901
+#: mokaine/framework/inc/welcome/welcome.php:352
+msgid "Support"
+msgstr ""
+
+#: mokaine/framework/core/enqueue.php:397
+#: mokaine/framework/inc/extensions/customizer/extension_customizer.php:566
+msgid "You have changes that are not saved. Would you like to save them now?"
+msgstr ""
+
+#: mokaine/framework/core/enqueue.php:405
+#: mokaine/framework/inc/extensions/customizer/extension_customizer.php:567
+msgid "Are you sure? Resetting will lose all custom values."
+msgstr ""
+
+#: mokaine/framework/core/enqueue.php:413
+msgid "Are you sure? Resetting will lose all custom values in this section."
+msgstr ""
+
+#: mokaine/framework/core/enqueue.php:421
+#: mokaine/framework/inc/extensions/customizer/extension_customizer.php:568
+msgid ""
+"Your current options will be replaced with the values of this preset. Would "
+"you like to proceed?"
+msgstr ""
+
+#: mokaine/framework/core/enqueue.php:428
+msgid "Please Wait"
+msgstr ""
+
+#: mokaine/framework/core/enqueue.php:439
+msgid "There was an error saving. Here is the result of your action:"
+msgstr ""
+
+#: mokaine/framework/core/enqueue.php:440
+msgid ""
+"There was a problem with your action. Please try again or reload the page."
+msgstr ""
+
+#: mokaine/framework/core/panel.php:65
+msgid "Warning- This options panel will not work properly without javascript!"
+msgstr ""
+
+#: mokaine/framework/core/panel.php:141
+msgid "Settings Imported!"
+msgstr ""
+
+#: mokaine/framework/core/panel.php:156
+msgid "All Defaults Restored!"
+msgstr ""
+
+#: mokaine/framework/core/panel.php:170
+msgid "Section Defaults Restored!"
+msgstr ""
+
+#: mokaine/framework/core/panel.php:184
+msgid "Settings Saved!"
+msgstr ""
+
+#: mokaine/framework/core/panel.php:204
+msgid "Settings have changed, you should save them!"
+msgstr ""
+
+#: mokaine/framework/core/panel.php:212
+msgid "error(s) were found!"
+msgstr ""
+
+#: mokaine/framework/core/panel.php:220
+msgid "warning(s) were found!"
+msgstr ""
+
+#: mokaine/framework/core/panel.php:340
+msgid ""
+"<strong>Your panel has bundled outdated copies of Redux Framework template "
+"files</strong> &#8211; if you encounter functionality issues this could be "
+"the reason. Ensure you update or remove them."
+msgstr ""
+
+#: mokaine/framework/framework.php:221
+#, php-format
+msgid "Options panel created using %1$s"
+msgstr ""
+
+#: mokaine/framework/framework.php:221
+#: mokaine/framework/inc/welcome/welcome.php:190
+msgid "Redux Framework"
+msgstr ""
+
+#: mokaine/framework/framework.php:225 mokaine/framework/framework.php:229
+msgid "Options"
+msgstr ""
+
+#: mokaine/framework/framework.php:1409
+#: mokaine/framework/templates/panel/menu_container.tpl.php:63
+msgid "System Info"
+msgstr ""
+
+#: mokaine/framework/framework.php:1712
+msgid "Enable"
+msgstr ""
+
+#: mokaine/framework/framework.php:1717
+msgid "Disable"
+msgstr ""
+
+#: mokaine/framework/framework.php:1723
+msgid "moving the mouse over"
+msgstr ""
+
+#: mokaine/framework/framework.php:1725
+msgid "clicking"
+msgstr ""
+
+#: mokaine/framework/framework.php:1729
+#, php-format
+msgid ""
+"Hints are tooltips that popup when %d the hint icon, offering addition "
+"information about the field in which they appear.  They can be %d d by using "
+"the link below."
+msgstr ""
+
+#: mokaine/framework/framework.php:1734
+msgid "Hints"
+msgstr ""
+
+#: mokaine/framework/framework.php:1861
+#: mokaine/meta/cmb/includes/CMB2_hookup.php:124
+#: mokaine/meta/meta-config.php:188
+#: mokaine/shortcodes/shortcode-functions.php:1385
+msgid "Default"
+msgstr ""
+
+#: mokaine/framework/framework.php:2711
+msgid "Invalid security credential, please reload the page and try again."
+msgstr ""
+
+#: mokaine/framework/framework.php:2797
+msgid "Your panel has no fields. Nothing to save."
+msgstr ""
+
+#: mokaine/framework/inc/class.redux_filesystem.php:23
+msgid "Unable to modify required files. Please ensure that"
+msgstr ""
+
+#: mokaine/framework/inc/class.redux_filesystem.php:25
+msgid ""
+"has the proper read/write permissions or enter your FTP information below."
+msgstr ""
+
+#: mokaine/framework/inc/class.redux_functions.php:237
+msgid "Dismiss"
+msgstr ""
+
+#: mokaine/framework/inc/class.redux_helpers.php:593
+#, php-format
+msgid ""
+"<code>%s</code> version <strong style=\"color:red\">%s</strong> is out of "
+"date. The core version is %s"
+msgstr ""
+
+#: mokaine/framework/inc/class.redux_themecheck.php:61
+#, php-format
+msgid ""
+"The theme you are testing has %s embedded. We invite you to read the %sTheme-"
+"Check Documentation%s to understand some warnings you will see because of "
+"Redux."
+msgstr ""
+
+#: mokaine/framework/inc/class.redux_themecheck.php:109
+msgid ""
+"The following directories & files are still located in your <strong>Redux</"
+"strong>  directory. They may cause errors in Theme-Check."
+msgstr ""
+
+#: mokaine/framework/inc/debug.php:41 mokaine/framework/inc/debug.php:69
+#: mokaine/framework/inc/debug.php:76 mokaine/framework/inc/debug.php:77
+msgid "Options Object"
+msgstr ""
+
+#: mokaine/framework/inc/debug.php:54
+msgid "Show Object in Javascript Console Object"
+msgstr ""
+
+#: mokaine/framework/inc/extensions/customizer/extension_customizer.php:601
+msgid "You have changes that are not saved.  Would you like to save them now?"
+msgstr ""
+
+#: mokaine/framework/inc/extensions/customizer/extension_customizer.php:602
+msgid "Are you sure?  Resetting will lose all custom values."
+msgstr ""
+
+#: mokaine/framework/inc/extensions/customizer/extension_customizer.php:603
+msgid ""
+"Your current options will be replaced with the values of this preset.  Would "
+"you like to proceed?"
+msgstr ""
+
+#: mokaine/framework/inc/extensions/import_export/import_export/field_import_export.php:103
+msgid "Import Options"
+msgstr ""
+
+#: mokaine/framework/inc/extensions/import_export/import_export/field_import_export.php:104
+msgid "Import from File"
+msgstr ""
+
+#: mokaine/framework/inc/extensions/import_export/import_export/field_import_export.php:104
+msgid "Import from URL"
+msgstr ""
+
+#: mokaine/framework/inc/extensions/import_export/import_export/field_import_export.php:107
+msgid ""
+"Input your backup file below and hit Import to restore your sites options "
+"from a backup."
+msgstr ""
+
+#: mokaine/framework/inc/extensions/import_export/import_export/field_import_export.php:112
+msgid ""
+"Input the URL to another sites options set and hit Import to load the "
+"options from that site."
+msgstr ""
+
+#: mokaine/framework/inc/extensions/import_export/import_export/field_import_export.php:116
+msgid "Import"
+msgstr ""
+
+#: mokaine/framework/inc/extensions/import_export/import_export/field_import_export.php:116
+msgid ""
+"WARNING! This will overwrite all existing option values, please proceed with "
+"caution!"
+msgstr ""
+
+#: mokaine/framework/inc/extensions/import_export/import_export/field_import_export.php:119
+msgid "Export Options"
+msgstr ""
+
+#: mokaine/framework/inc/extensions/import_export/import_export/field_import_export.php:121
+msgid ""
+"Here you can copy/download your current option settings. Keep this safe as "
+"you can use it as a backup should anything go wrong, or you can use it to "
+"restore your settings on this site (or any other site)."
+msgstr ""
+
+#: mokaine/framework/inc/extensions/import_export/import_export/field_import_export.php:126
+msgid "Copy Data"
+msgstr ""
+
+#: mokaine/framework/inc/extensions/import_export/import_export/field_import_export.php:126
+msgid "Download Data File"
+msgstr ""
+
+#: mokaine/framework/inc/extensions/import_export/import_export/field_import_export.php:126
+msgid "Copy Export URL"
+msgstr ""
+
+#: mokaine/framework/inc/fields/background/field_background.php:124
+#: mokaine/framework/inc/fields/color/field_color.php:73
+#: mokaine/framework/inc/fields/color_gradient/field_color_gradient.php:79
+#: mokaine/framework/inc/fields/color_gradient/field_color_gradient.php:91
+#: mokaine/meta/meta-config.php:119
+#: mokaine/shortcodes/shortcode-functions.php:370
+#: mokaine/shortcodes/shortcode-functions.php:1090
+#: mokaine/shortcodes/shortcode-functions.php:1730
+#: mokaine/shortcodes/shortcode-functions.php:1812
+#: mokaine/shortcodes/shortcode-functions.php:1886
+msgid "Transparent"
+msgstr ""
+
+#: mokaine/framework/inc/fields/background/field_background.php:141
+msgid "Background Repeat"
+msgstr ""
+
+#: mokaine/framework/inc/fields/background/field_background.php:157
+msgid "Background Clip"
+msgstr ""
+
+#: mokaine/framework/inc/fields/background/field_background.php:173
+msgid "Background Origin"
+msgstr ""
+
+#: mokaine/framework/inc/fields/background/field_background.php:188
+msgid "Background Size"
+msgstr ""
+
+#: mokaine/framework/inc/fields/background/field_background.php:203
+msgid "Background Attachment"
+msgstr ""
+
+#: mokaine/framework/inc/fields/background/field_background.php:223
+msgid "Background Position"
+msgstr ""
+
+#: mokaine/framework/inc/fields/background/field_background.php:277
+#: mokaine/framework/inc/fields/media/field_media.php:149
+msgid "No media selected"
+msgstr ""
+
+#: mokaine/framework/inc/fields/background/field_background.php:314
+#: mokaine/framework/inc/fields/media/field_media.php:198
+#: mokaine/framework/inc/fields/slides/field_slides.php:126
+#: mokaine/framework/inc/fields/slides/field_slides.php:188
+#: mokaine/shortcodes/shortcode-functions.php:2150
+#: mokaine/shortcodes/shortcode-functions.php:2201
+#: mokaine/shortcodes/shortcode-functions.php:2220
+msgid "Upload"
+msgstr ""
+
+#: mokaine/framework/inc/fields/background/field_background.php:321
+#: mokaine/framework/inc/fields/media/field_media.php:205
+#: mokaine/framework/inc/fields/multi_text/field_multi_text.php:69
+#: mokaine/framework/inc/fields/multi_text/field_multi_text.php:73
+#: mokaine/framework/inc/fields/multi_text/field_multi_text.php:76
+#: mokaine/framework/inc/fields/slides/field_slides.php:133
+#: mokaine/framework/inc/fields/slides/field_slides.php:190
+#: mokaine/meta/cmb/includes/CMB2_Types.php:347
+#: mokaine/meta/cmb/includes/CMB2_Types.php:794
+#: mokaine/meta/cmb/includes/CMB2_Types.php:874
+#: mokaine/meta/cmb/includes/CMB2_hookup.php:173
+msgid "Remove"
+msgstr ""
+
+#: mokaine/framework/inc/fields/border/field_border.php:125
+#: mokaine/framework/inc/fields/spacing/field_spacing.php:191
+#: mokaine/meta/cmb/includes/CMB2_Field.php:598
+#: mokaine/shortcodes/shortcode-functions.php:1686
+msgid "All"
+msgstr ""
+
+#: mokaine/framework/inc/fields/border/field_border.php:138
+#: mokaine/framework/inc/fields/spacing/field_spacing.php:215
+msgid "Top"
+msgstr ""
+
+#: mokaine/framework/inc/fields/border/field_border.php:145
+#: mokaine/framework/inc/fields/spacing/field_spacing.php:222
+msgid "Right"
+msgstr ""
+
+#: mokaine/framework/inc/fields/border/field_border.php:152
+#: mokaine/framework/inc/fields/spacing/field_spacing.php:229
+msgid "Bottom"
+msgstr ""
+
+#: mokaine/framework/inc/fields/border/field_border.php:159
+#: mokaine/framework/inc/fields/spacing/field_spacing.php:236
+msgid "Left"
+msgstr ""
+
+#: mokaine/framework/inc/fields/border/field_border.php:173
+msgid "Border style"
+msgstr ""
+
+#: mokaine/framework/inc/fields/color_gradient/field_color_gradient.php:68
+msgid "From "
+msgstr ""
+
+#: mokaine/framework/inc/fields/color_gradient/field_color_gradient.php:82
+msgid "To "
+msgstr ""
+
+#: mokaine/framework/inc/fields/dimensions/field_dimensions.php:162
+msgid "Width"
+msgstr ""
+
+#: mokaine/framework/inc/fields/dimensions/field_dimensions.php:178
+#: mokaine/framework/inc/fields/typography/field_typography.php:442
+msgid "Height"
+msgstr ""
+
+#: mokaine/framework/inc/fields/dimensions/field_dimensions.php:189
+#: mokaine/framework/inc/fields/dimensions/field_dimensions.php:190
+#: mokaine/framework/inc/fields/spacing/field_spacing.php:245
+#: mokaine/framework/inc/fields/spacing/field_spacing.php:246
+msgid "Units"
+msgstr ""
+
+#: mokaine/framework/inc/fields/gallery/field_gallery.php:73
+msgid "Add/Edit Gallery"
+msgstr ""
+
+#: mokaine/framework/inc/fields/gallery/field_gallery.php:74
+msgid "Clear Gallery"
+msgstr ""
+
+#: mokaine/framework/inc/fields/link_color/field_link_color.php:87
+msgid "Regular"
+msgstr ""
+
+#: mokaine/framework/inc/fields/link_color/field_link_color.php:91
+msgid "Hover"
+msgstr ""
+
+#: mokaine/framework/inc/fields/link_color/field_link_color.php:95
+msgid "Visited"
+msgstr ""
+
+#: mokaine/framework/inc/fields/link_color/field_link_color.php:99
+msgid "Active"
+msgstr ""
+
+#: mokaine/framework/inc/fields/multi_text/field_multi_text.php:61
+msgid "Add More"
+msgstr ""
+
+#: mokaine/framework/inc/fields/password/field_password.php:62
+msgid "Password"
+msgstr ""
+
+#: mokaine/framework/inc/fields/password/field_password.php:63
+msgid "Username"
+msgstr ""
+
+#: mokaine/framework/inc/fields/select/field_select.php:83
+#: mokaine/framework/inc/fields/select_image/field_select_image.php:63
+msgid "Select an item"
+msgstr ""
+
+#: mokaine/framework/inc/fields/select/field_select.php:134
+#: mokaine/framework/inc/fields/select_image/field_select_image.php:144
+msgid "No items of this type were found."
+msgstr ""
+
+#: mokaine/framework/inc/fields/slides/field_slides.php:68
+msgid "Slide"
+msgstr ""
+
+#: mokaine/framework/inc/fields/slides/field_slides.php:73
+#: mokaine/framework/inc/fields/slides/field_slides.php:174
+#, php-format
+msgid "New %s"
+msgstr ""
+
+#: mokaine/framework/inc/fields/slides/field_slides.php:145
+#: mokaine/framework/inc/fields/slides/field_slides.php:200
+#: mokaine/shortcodes/shortcode-functions.php:1136
+#: mokaine/shortcodes/shortcode-functions.php:1309
+msgid "Title"
+msgstr ""
+
+#: mokaine/framework/inc/fields/slides/field_slides.php:149
+#: mokaine/framework/inc/fields/slides/field_slides.php:204
+msgid "Description"
+msgstr ""
+
+#: mokaine/framework/inc/fields/slides/field_slides.php:153
+#: mokaine/framework/inc/fields/slides/field_slides.php:207
+msgid "URL"
+msgstr ""
+
+#: mokaine/framework/inc/fields/slides/field_slides.php:167
+#: mokaine/framework/inc/fields/slides/field_slides.php:220
+msgid "Delete"
+msgstr ""
+
+#: mokaine/framework/inc/fields/slides/field_slides.php:223
+#, php-format
+msgid "Add %s"
+msgstr ""
+
+#: mokaine/framework/inc/fields/switch/field_switch.php:41
+msgid "On"
+msgstr ""
+
+#: mokaine/framework/inc/fields/switch/field_switch.php:44
+msgid "Off"
+msgstr ""
+
+#: mokaine/framework/inc/fields/typography/field_typography.php:231
+msgid "Font Family"
+msgstr ""
+
+#: mokaine/framework/inc/fields/typography/field_typography.php:232
+msgid "Font family"
+msgstr ""
+
+#: mokaine/framework/inc/fields/typography/field_typography.php:258
+#: mokaine/framework/inc/fields/typography/field_typography.php:259
+msgid "Backup Font Family"
+msgstr ""
+
+#: mokaine/framework/inc/fields/typography/field_typography.php:273
+#: mokaine/framework/inc/fields/typography/field_typography.php:281
+msgid "Font style"
+msgstr ""
+
+#: mokaine/framework/inc/fields/typography/field_typography.php:274
+msgid "Font Weight &amp; Style"
+msgstr ""
+
+#: mokaine/framework/inc/fields/typography/field_typography.php:281
+msgid "Style"
+msgstr ""
+
+#: mokaine/framework/inc/fields/typography/field_typography.php:321
+msgid "Font subsets"
+msgstr ""
+
+#: mokaine/framework/inc/fields/typography/field_typography.php:323
+msgid "Font Subsets"
+msgstr ""
+
+#: mokaine/framework/inc/fields/typography/field_typography.php:325
+msgid "Subsets"
+msgstr ""
+
+#: mokaine/framework/inc/fields/typography/field_typography.php:325
+msgid "Font script"
+msgstr ""
+
+#: mokaine/framework/inc/fields/typography/field_typography.php:342
+#: mokaine/framework/inc/fields/typography/field_typography.php:343
+#: mokaine/framework/inc/fields/typography/field_typography.php:344
+msgid "Text Align"
+msgstr ""
+
+#: mokaine/framework/inc/fields/typography/field_typography.php:365
+#: mokaine/framework/inc/fields/typography/field_typography.php:366
+#: mokaine/framework/inc/fields/typography/field_typography.php:367
+msgid "Text Transform"
+msgstr ""
+
+#: mokaine/framework/inc/fields/typography/field_typography.php:388
+#: mokaine/framework/inc/fields/typography/field_typography.php:389
+#: mokaine/framework/inc/fields/typography/field_typography.php:390
+msgid "Font Variant"
+msgstr ""
+
+#: mokaine/framework/inc/fields/typography/field_typography.php:408
+#: mokaine/framework/inc/fields/typography/field_typography.php:409
+#: mokaine/framework/inc/fields/typography/field_typography.php:410
+msgid "Text Decoration"
+msgstr ""
+
+#: mokaine/framework/inc/fields/typography/field_typography.php:432
+#: mokaine/framework/inc/fields/typography/field_typography.php:433
+msgid "Font Size"
+msgstr ""
+
+#: mokaine/framework/inc/fields/typography/field_typography.php:433
+msgid "Size"
+msgstr ""
+
+#: mokaine/framework/inc/fields/typography/field_typography.php:441
+#: mokaine/framework/inc/fields/typography/field_typography.php:442
+msgid "Line Height"
+msgstr ""
+
+#: mokaine/framework/inc/fields/typography/field_typography.php:450
+#: mokaine/framework/inc/fields/typography/field_typography.php:451
+msgid "Word Spacing"
+msgstr ""
+
+#: mokaine/framework/inc/fields/typography/field_typography.php:459
+#: mokaine/framework/inc/fields/typography/field_typography.php:460
+msgid "Letter Spacing"
+msgstr ""
+
+#: mokaine/framework/inc/fields/typography/field_typography.php:478
+msgid "Font Color"
+msgstr ""
+
+#: mokaine/framework/inc/fields/typography/field_typography.php:480
+msgid "Font color"
+msgstr ""
+
+#: mokaine/framework/inc/fields/typography/field_typography.php:879
+msgid "Standard Fonts"
+msgstr ""
+
+#: mokaine/framework/inc/fields/typography/field_typography.php:980
+msgid "Google Webfonts"
+msgstr ""
+
+#: mokaine/framework/inc/tracking.php:129
+msgid "Help improve Our Panel"
+msgstr ""
+
+#: mokaine/framework/inc/tracking.php:130
+msgid ""
+"Please helps us improve our panel by allowing us to gather anonymous usage "
+"stats so we know which configurations, plugins and themes to test to ensure "
+"compatibility."
+msgstr ""
+
+#: mokaine/framework/inc/tracking.php:135
+msgid "Allow tracking"
+msgstr ""
+
+#: mokaine/framework/inc/tracking.php:140
+msgid "Do not allow tracking"
+msgstr ""
+
+#: mokaine/framework/inc/tracking.php:151
+msgid "Welcome to the Redux Demo Panel"
+msgstr ""
+
+#: mokaine/framework/inc/tracking.php:152
+msgid "Getting Started"
+msgstr ""
+
+#: mokaine/framework/inc/tracking.php:152
+#, php-format
+msgid ""
+"This panel demonstrates the many features of Redux.  Before digging in, we "
+"suggest you get up to speed by reviewing %1$s."
+msgstr ""
+
+#: mokaine/framework/inc/tracking.php:152
+msgid "our documentation"
+msgstr ""
+
+#: mokaine/framework/inc/tracking.php:153
+msgid "Redux Generator"
+msgstr ""
+
+#: mokaine/framework/inc/tracking.php:153
+#, php-format
+msgid ""
+"Want to get a head start? Use the %1$s. It will create a customized "
+"boilerplate theme or a standalone admin folder complete with all things "
+"Redux (with the help of Underscores and TGM). Save yourself a headache and "
+"try it today."
+msgstr ""
+
+#: mokaine/framework/inc/tracking.php:154
+#: mokaine/framework/inc/welcome/welcome.php:214
+msgid "Redux Extensions"
+msgstr ""
+
+#: mokaine/framework/inc/tracking.php:154
+#, php-format
+msgid ""
+"Did you know we have extensions, which greatly enhance the features of "
+"Redux?  Visit our %1$s to learn more!"
+msgstr ""
+
+#: mokaine/framework/inc/tracking.php:154
+msgid "extensions directory"
+msgstr ""
+
+#: mokaine/framework/inc/tracking.php:155
+msgid "Like Redux?"
+msgstr ""
+
+#: mokaine/framework/inc/tracking.php:155
+#, php-format
+msgid ""
+"If so, please %1$s and consider making a %2$s to keep development of Redux "
+"moving forward."
+msgstr ""
+
+#: mokaine/framework/inc/tracking.php:155
+msgid "leave us a favorable review on WordPress.org"
+msgstr ""
+
+#: mokaine/framework/inc/tracking.php:155
+msgid "donation"
+msgstr ""
+
+#: mokaine/framework/inc/tracking.php:156
+msgid "Newsletter"
+msgstr ""
+
+#: mokaine/framework/inc/tracking.php:156
+msgid ""
+"If you'd like to keep up to with all things Redux, please subscribe to our "
+"newsletter"
+msgstr ""
+
+#: mokaine/framework/inc/tracking.php:157
+msgid "Email address"
+msgstr ""
+
+#: mokaine/framework/inc/tracking.php:157
+msgid "Subscribe"
+msgstr ""
+
+#: mokaine/framework/inc/tracking.php:166
+msgid "Close"
+msgstr ""
+
+#: mokaine/framework/inc/validation/color/validation_color.php:15
+#: mokaine/framework/inc/validation/color_rgba/validation_color_rgba.php:14
+#: mokaine/framework/inc/validation/colorrgba/validation_colorrgba.php:16
+msgid "This field must be a valid color value."
+msgstr ""
+
+#: mokaine/framework/inc/validation/comma_numeric/validation_comma_numeric.php:16
+msgid ""
+"You must provide a comma separated list of numerical values for this option."
+msgstr ""
+
+#: mokaine/framework/inc/validation/css/validation_css.php:38
+msgid "Unsafe strings were found in your CSS and have been filtered out."
+msgstr ""
+
+#: mokaine/framework/inc/validation/date/validation_date.php:16
+msgid "This field must be a valid date."
+msgstr ""
+
+#: mokaine/framework/inc/validation/email/validation_email.php:16
+#: mokaine/framework/inc/validation/email_not_empty/validation_email_not_empty.php:16
+msgid "You must provide a valid email for this option."
+msgstr ""
+
+#: mokaine/framework/inc/validation/no_html/validation_no_html.php:15
+msgid ""
+"You must not enter any HTML in this field, all HTML tags have been removed."
+msgstr ""
+
+#: mokaine/framework/inc/validation/no_special_chars/validation_no_special_chars.php:16
+msgid ""
+"You must not enter any special characters in this field, all special "
+"characters have been removed."
+msgstr ""
+
+#: mokaine/framework/inc/validation/not_empty/validation_not_empty.php:16
+msgid "This field cannot be empty. Please provide a value."
+msgstr ""
+
+#: mokaine/framework/inc/validation/numeric/validation_numeric.php:16
+#: mokaine/framework/inc/validation/numeric_not_empty/validation_numeric_not_empty.php:16
+msgid "You must provide a numerical value for this option."
+msgstr ""
+
+#: mokaine/framework/inc/validation/unique_slug/validation_unique_slug.php:16
+#, php-format
+msgid ""
+"That URL slug is in use, please choose another. <code>%s</code> is open for "
+"use."
+msgstr ""
+
+#: mokaine/framework/inc/validation/url/validation_url.php:16
+msgid "You must provide a valid URL for this option."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/about.php:2
+#, php-format
+msgid "Welcome to Redux Framework %s"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/about.php:5
+#, php-format
+msgid ""
+"Thank you for updating to the latest version! Redux Framework %s is a huge "
+"step forward in Redux Development. Look at all that's new."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/about.php:15
+msgid "What is Redux Framework?"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/about.php:17
+msgid ""
+"Redux Framework is the core of many products on the web. It is an option "
+"framework which developers use to\n"
+"            enhance their products."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/about.php:22
+msgid "Learn More"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/about.php:28
+msgid "New in this Release"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/changelog.php:2
+msgid "Redux Framework - Changelog"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/changelog.php:5
+#: mokaine/framework/inc/welcome/views/status_report.php:28
+msgid ""
+"Our core mantra at Redux is backwards compatibility. With hundreds of "
+"thousands of instances worldwide, you can be assured that we will take care "
+"of you and your clients."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/credits.php:2
+msgid "Redux Framework - A Community Effort"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/credits.php:5
+msgid ""
+"We recognize we are nothing without our community. We would like to thank "
+"all of those who help Redux to be what it is. Thank you for your involvement."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/credits.php:14
+msgid ""
+"Redux is created by a community of developers world wide. Want to have your "
+"name listed too? <a href=\"https://github.com/reduxframework/redux-framework/"
+"blob/master/CONTRIBUTING.md\" target=\"_blank\">Contribute to Redux</a>."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/extensions.php:76
+msgid "Redux Framework - Extensions"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/extensions.php:79
+msgid ""
+"Supercharge your Redux experience. Our extensions provide you with features "
+"that will take your products to the next level."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/extensions.php:88
+msgid ""
+"While some are built specificially for developers, extensions such as Custom "
+"Fonts are sure to make any user happy."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:25
+msgid "Redux Framework - System Status"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:38
+msgid ""
+"Please copy and paste this information in your ticket when contacting "
+"support:"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:41
+msgid "Get System Report"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:44
+msgid "Understanding the Status Report"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:51
+msgid "Copied!"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:51
+msgid "Copy for Support"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:60
+msgid "WordPress Environment"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:65
+msgid "Home URL"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:66
+msgid "The URL of your site's homepage."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:70
+msgid "Site URL"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:71
+msgid "The root URL of your site."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:75
+msgid "Redux Version"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:76
+msgid "The version of Redux Framework installed on your site."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:80
+msgid "Redux Data Directory Writable"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:83
+msgid ""
+"Redux and its extensions write data to the <code>uploads</code> directory. "
+"This directory must be writable."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:88
+#, php-format
+msgid "To allow data saving, make <code>%s</code> writable."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:93
+msgid "WP Content URL"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:96
+msgid "The location of Wordpress's content URL."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:102
+msgid "WP Version"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:103
+msgid "The version of WordPress installed on your site."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:107
+msgid "WP Multisite"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:108
+msgid "Whether or not you have WordPress Multisite enabled."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:116
+msgid "Permalink Structure"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:117
+msgid ""
+"The current permalink structure as defined in Wordpress Settings->Permalinks."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:122
+msgid "Front Page Display"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:123
+msgid "The current Reading mode of Wordpress."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:131
+msgid "Front Page"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:132
+msgid "The currently selected page which acts as the site's Front Page."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:136
+msgid "Posts Page"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:137
+msgid "The currently selected page in where blog posts are displayed."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:144
+msgid "WP Memory Limit"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:145
+msgid "The maximum amount of memory (RAM) that your site can use at one time."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:150
+#, php-format
+msgid ""
+"%s - We recommend setting memory to at least 40MB. See: <a href=\"%s\" "
+"target=\"_blank\">Increasing memory allocated to PHP</a>"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:157
+msgid "Database Table Prefix"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:159
+msgid "The prefix structure of the current Wordpress database."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:163
+msgid "WP Debug Mode"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:164
+msgid "Displays whether or not WordPress is in Debug Mode."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:172
+msgid "Language"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:173
+msgid "The current language used by WordPress. Default = English"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:181
+msgid "Browser"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:186
+msgid "Browser Info"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:187
+msgid "Information about web browser current in use."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:202
+msgid "Server Environment"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:207
+msgid "Server Info"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:208
+msgid "Information about the web server that is currently hosting your site."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:212
+msgid "Localhost Environment"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:213
+msgid "Is the server running in a localhost environment."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:223
+msgid "PHP Version"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:224
+msgid "The version of PHP installed on your hosting server."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:228
+msgid "ABSPATH"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:229
+msgid "The ABSPATH variable on the server."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:235
+msgid "PHP Memory Limit"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:236
+#: mokaine/framework/inc/welcome/views/status_report.php:241
+msgid "The largest filesize that can be contained in one post."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:240
+msgid "PHP Post Max Size"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:245
+msgid "PHP Time Limit"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:246
+msgid ""
+"The amount of time (in seconds) that your site will spend on a single "
+"operation before timing out (to avoid server lockups)"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:250
+msgid "PHP Max Input Vars"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:251
+msgid ""
+"The maximum number of variables your server can use for a single function to "
+"avoid overloads."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:255
+msgid "PHP Display Errors"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:256
+msgid "Determines if PHP will display errors within the browser."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:267
+msgid "SUHOSIN Installed"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:268
+msgid ""
+"Suhosin is an advanced protection system for PHP installations. It was "
+"designed to protect your servers on the one hand against a number of well "
+"known problems in PHP applications and on the other hand against potential "
+"unknown vulnerabilities within these applications or the PHP core itself.  "
+"If enabled on your server, Suhosin may need to be configured to increase its "
+"data submission limits."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:277
+msgid "MySQL Version"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:278
+msgid "The version of MySQL installed on your hosting server."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:282
+msgid "Max Upload Size"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:283
+msgid ""
+"The largest filesize that can be uploaded to your WordPress installation."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:287
+msgid "Default Timezone is UTC"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:290
+msgid "The default timezone for your server."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:293
+#, php-format
+msgid "Default timezone is %s - it should be UTC"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:304
+msgid "Used when communicating with remote services with PHP."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:310
+msgid ""
+"Your server does not have fsockopen or cURL enabled - cURL is used to "
+"communicate with other servers. Please contact your hosting provider."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:349
+msgid "Remote Post"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:350
+msgid "Used to send data to remote servers."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:355
+msgid ""
+"wp_remote_post() failed. Many advanced features may not function. Contact "
+"your hosting provider."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:358
+#: mokaine/framework/inc/welcome/views/status_report.php:373
+#, php-format
+msgid "Error: %s"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:365
+msgid "Remote Get"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:366
+msgid "Used to grab information from remote servers for updates updates."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:371
+msgid ""
+"wp_remote_get() failed. This is needed to get information from remote "
+"servers. Contact your hosting provider."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:405
+msgid "Active Plugins"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:421
+msgid "Visit plugin homepage"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:427
+#, php-format
+msgctxt "by author"
+msgid "by %s"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:445
+msgid "Redux Instance: "
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:452
+msgid "The opt_name argument for this instance of Redux."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:460
+msgid "The global_variable argument for this instance of Redux."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:468
+msgid "Indicates if developer mode is enabled for this instance of Redux."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:473
+msgid "Indicates if ajax based saving is enabled for this instance of Redux."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:478
+msgid ""
+"The page slug denotes the string used for the options panel page for this "
+"instance of Redux."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:483
+msgid ""
+"The page permissions variable sets the permission level required to access "
+"the options panel for this instance of Redux."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:488
+msgid ""
+"This variable set whether or not the menu is displayed as an admin menu item "
+"for this instance of Redux."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:493
+msgid ""
+"The page parent variable sets where the options menu will be placed on the "
+"WordPress admin sidebar for this instance of Redux."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:499
+msgid "Indicates if the compiler flag is enabled for this instance of Redux."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:504
+msgid ""
+"Indicates if output flag for globally shutting off all CSS output is enabled "
+"for this instance of Redux."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:509
+msgid ""
+"The output_tag variable sets whether or not dynamic CSS will be generated "
+"for the customizer and Google fonts for this instance of Redux."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:518
+msgid ""
+"The specified template path containing custom template files for this "
+"instance of Redux."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:523
+msgid "List of template files overriding the default Redux template files."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:546
+msgid "Indicates the installed Redux extensions and their version numbers."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:577
+msgid "Theme"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:582
+#: mokaine/shortcodes/shortcode-functions.php:1334
+msgid "Name"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:583
+msgid "The name of the current active theme."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:587
+msgid "Version"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:588
+msgid "The installed version of the current active theme."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:593
+msgid "is available"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:598
+msgid "Author URL"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:599
+msgid "The theme developers URL."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:603
+msgid "Child Theme"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:604
+msgid "Displays whether or not the current theme is a child theme."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:606
+#, php-format
+msgid ""
+"If you're modifying Redux Framework or a parent theme you didn't build "
+"personally, we recommend using a child theme. See: <a href=\"%s\" target="
+"\"_blank\">How to create a child theme</a>"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:614
+msgid "Parent Theme Name"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:616
+msgid "The name of the parent theme."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:620
+msgid "Parent Theme Version"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:623
+msgid "The installed version of the parent theme."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:627
+msgid "Parent Theme Author URL"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/status_report.php:630
+msgid "The parent theme developers URL."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/support.php:2
+msgid "Redux Framework - Support"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/support.php:5
+msgid ""
+"We are an open source project used by developers to make powerful control "
+"panels."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/support.php:20
+msgid "Generate a Support URL"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/support.php:21
+msgid "Select Support Type"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/support.php:22
+#: mokaine/framework/inc/welcome/views/support.php:65
+msgid "How to Get Support"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/support.php:27
+msgid "Submit a Support Request"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/support.php:30
+msgid "To get started, we will need to generate a support hash."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/support.php:33
+#, php-format
+msgid ""
+"This will provide to your developer all the information they may need to "
+"remedy your issue. This action WILL send information securely to a remote "
+"server. To see the type of information sent, please look at the  <a href=\"%s"
+"\">Status tab</a>."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/support.php:37
+msgid ""
+"Generate\n"
+"                        a Support URL"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/support.php:44
+msgid "Select Your Support Type"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/support.php:47
+msgid "What type of user are you?"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/support.php:52
+msgid "User"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/support.php:53
+msgid "I am a user, using a pre-built product."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/support.php:56
+msgid "Developer"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/support.php:57
+msgid "I am a developer, building a product using Redux."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/support.php:68
+msgid ""
+"Please proceed to the Redux Framework issue tracker and supply us with your "
+"support URL below. Please also provide any information that will help us to "
+"reproduce your issue."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/support.php:74
+msgid ""
+"Listed below are the Wordpress plugins and/or theme installed on your site "
+"that utilize Redux Framework. We do not directly support products created "
+"with our framework.  It is the responsibility of the plugin or theme "
+"developer to support their work. You will need to contact the author(s) of "
+"the products listed below with your support questions."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/support.php:77
+msgid ""
+"Please be sure to include for your developer - via cut and paste - the "
+"Support URL in the box below."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/views/support.php:215
+#, php-format
+msgid ""
+"Should the developer not be responsive, read the <a href=\"%s\" target="
+"\"_blank\">following article</a> before asking for support from us directly."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/welcome.php:170
+msgid "Support hash could not be generated. Please try again later."
+msgstr ""
+
+#: mokaine/framework/inc/welcome/welcome.php:190
+msgid "Welcome to Redux Framework"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/welcome.php:198
+msgid "Redux Framework Changelog"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/welcome.php:206
+msgid "Get Support"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/welcome.php:223
+msgid "The people that develop Redux Framework"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/welcome.php:231
+msgid "Redux Framework Status"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/welcome.php:336
+msgid "What's New"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/welcome.php:340
+msgid "Extensions"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/welcome.php:344
+#: mokaine/includes/update-theme.php:62
+msgid "Changelog"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/welcome.php:348
+msgid "Credits"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/welcome.php:356
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:1500
+msgid "Status"
+msgstr ""
+
+#: mokaine/framework/inc/welcome/welcome.php:513
+#, php-format
+msgid "View %s"
+msgstr ""
+
+#: mokaine/framework/templates/panel/footer.tpl.php:47
+#: mokaine/framework/templates/panel/header_stickybar.tpl.php:20
+msgid "Save Changes"
+msgstr ""
+
+#: mokaine/framework/templates/panel/footer.tpl.php:50
+#: mokaine/framework/templates/panel/header_stickybar.tpl.php:22
+msgid "Reset Section"
+msgstr ""
+
+#: mokaine/framework/templates/panel/footer.tpl.php:51
+#: mokaine/framework/templates/panel/header_stickybar.tpl.php:23
+msgid "Reset All"
+msgstr ""
+
+#: mokaine/framework/templates/panel/footer.tpl.php:56
+#: mokaine/framework/templates/panel/header_stickybar.tpl.php:26
+msgid "Working..."
+msgstr ""
+
+#: mokaine/framework/templates/panel/header.tpl.php:12
+#: mokaine/framework/templates/panel/header.tpl.php:47
+msgid "Developer Mode Enabled"
+msgstr ""
+
+#: mokaine/framework/templates/panel/header.tpl.php:21
+msgid "WP_DEBUG is enabled"
+msgstr ""
+
+#: mokaine/framework/templates/panel/header.tpl.php:27
+msgid "you are working in a localhost environment"
+msgstr ""
+
+#: mokaine/framework/templates/panel/header.tpl.php:32
+msgid "and"
+msgstr ""
+
+#: mokaine/framework/templates/panel/header.tpl.php:35
+msgid "Redux has enabled developer mode because"
+msgstr ""
+
+#: mokaine/framework/templates/panel/header.tpl.php:37
+msgid ""
+"If you are not a developer, your theme/plugin author shipped with developer "
+"mode enabled. Contact them directly to fix it."
+msgstr ""
+
+#: mokaine/framework/templates/panel/header_stickybar.tpl.php:16
+msgid "Expand"
+msgstr ""
+
+#: mokaine/includes/custom-types.php:12
+#: mokaine/shortcodes/shortcode-functions.php:1775
+msgid "Portfolio"
+msgstr ""
+
+#: mokaine/includes/custom-types.php:14
+msgid "Search Portfolio Items"
+msgstr ""
+
+#: mokaine/includes/custom-types.php:15
+msgid "All Items"
+msgstr ""
+
+#: mokaine/includes/custom-types.php:16
+msgid "Parent Portfolio Item"
+msgstr ""
+
+#: mokaine/includes/custom-types.php:17
+msgid "Edit Portfolio Item"
+msgstr ""
+
+#: mokaine/includes/custom-types.php:18
+msgid "Update Portfolio Item"
+msgstr ""
+
+#: mokaine/includes/custom-types.php:19
+msgid "Add New Portfolio Item"
+msgstr ""
+
+#: mokaine/includes/custom-types.php:41 mokaine/includes/custom-types.php:50
+msgid "Item Tags"
+msgstr ""
+
+#: mokaine/includes/custom-types.php:42
+msgid "Item Tag"
+msgstr ""
+
+#: mokaine/includes/custom-types.php:43
+msgid "Search Item Tags"
+msgstr ""
+
+#: mokaine/includes/custom-types.php:44
+msgid "All Item Tags"
+msgstr ""
+
+#: mokaine/includes/custom-types.php:45
+msgid "Parent Item Tag"
+msgstr ""
+
+#: mokaine/includes/custom-types.php:46
+msgid "Edit Item Tag"
+msgstr ""
+
+#: mokaine/includes/custom-types.php:47
+msgid "Update Item Tag"
+msgstr ""
+
+#: mokaine/includes/custom-types.php:48
+msgid "Add New Item Tag"
+msgstr ""
+
+#: mokaine/includes/custom-types.php:49
+msgid "New Item Tag"
+msgstr ""
+
+#: mokaine/includes/custom-types.php:68
+msgid "Intros"
+msgstr ""
+
+#: mokaine/includes/custom-types.php:69 mokaine/includes/custom-types.php:81
+msgid "Intro"
+msgstr ""
+
+#: mokaine/includes/custom-types.php:70
+msgid "Search Intros"
+msgstr ""
+
+#: mokaine/includes/custom-types.php:71
+msgid "All Intros"
+msgstr ""
+
+#: mokaine/includes/custom-types.php:72
+msgid "Parent Intro"
+msgstr ""
+
+#: mokaine/includes/custom-types.php:73
+msgid "Edit Intro"
+msgstr ""
+
+#: mokaine/includes/custom-types.php:74
+msgid "Update Intro"
+msgstr ""
+
+#: mokaine/includes/custom-types.php:75
+msgid "Add New Intro"
+msgstr ""
+
+#: mokaine/includes/custom-types.php:76
+msgid "Intro Composer"
+msgstr ""
+
+#: mokaine/includes/extras.php:37
+msgid "Posts navigation"
+msgstr ""
+
+#: mokaine/includes/extras.php:41
+msgid ""
+"<i class=\"icon-chevron-left\"></i><span class=\"label\">Older posts</span>"
+msgstr ""
+
+#: mokaine/includes/extras.php:45
+msgid ""
+"<span class=\"label\">Newer posts</span><i class=\"icon-chevron-right\"></i>"
+msgstr ""
+
+#: mokaine/includes/extras.php:80
+msgid "Post navigation"
+msgstr ""
+
+#: mokaine/includes/extras.php:84
+msgctxt "Previous post link"
+msgid ""
+"<i class=\"icon-chevron-left\"></i><span class=\"label\">%title</span><span "
+"class=\"label label-mobile\">Prev</span>"
+msgstr ""
+
+#: mokaine/includes/extras.php:90
+msgctxt "Next post link"
+msgid ""
+"<span class=\"label\">%title</span><span class=\"label label-mobile\">Next</"
+"span><i class=\"icon-chevron-right\"></i>"
+msgstr ""
+
+#: mokaine/includes/extras.php:101 mokaine/includes/extras.php:187
+msgid ", "
+msgstr ""
+
+#: mokaine/includes/extras.php:116
+#, php-format
+msgctxt "post date"
+msgid "%s"
+msgstr ""
+
+#: mokaine/includes/extras.php:190
+#, php-format
+msgid "This article was tagged %1$s."
+msgstr ""
+
+#: mokaine/includes/extras.php:291
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: mokaine/includes/register-widgets.php:33
+msgid "Footer One"
+msgstr ""
+
+#: mokaine/includes/register-widgets.php:45
+msgid "Footer Two"
+msgstr ""
+
+#: mokaine/includes/register-widgets.php:55
+msgid "Footer Three"
+msgstr ""
+
+#: mokaine/includes/register-widgets.php:69
+msgid "Footer Four"
+msgstr ""
+
+#: mokaine/includes/update-theme.php:43
+msgid "Theme Update"
+msgstr ""
+
+#: mokaine/includes/update-theme.php:55
+msgid "Update"
+msgstr ""
+
+#: mokaine/includes/update-theme.php:56
+#, php-format
+msgid ""
+"<strong>%s - Version %s</strong> is available to download (you are currently "
+"using <strong>Version %s</strong>)."
+msgstr ""
+
+#: mokaine/includes/update-theme.php:58
+msgid "How do I update?"
+msgstr ""
+
+#: mokaine/includes/update-theme.php:59
+#, php-format
+msgid ""
+"Updating a theme is pretty much like installing it. Download a fresh copy "
+"from Mokaine.com, extract the .zip package, find the theme folder or the "
+"theme zip file. Now, if you do not know how to connect via FTP connection to "
+"your server, simply delete the current version of \"%s\" from WordPress and "
+"install the new one (Version %s). Otherwise, connect to your server, "
+"navigate to the WordPress themes folder and replace the whole theme folder "
+"with the new version."
+msgstr ""
+
+#: mokaine/includes/update-theme.php:60
+msgid "Your themes path is:"
+msgstr ""
+
+#: mokaine/includes/update-theme.php:61
+msgid ""
+"<strong>IMPORTANT:</strong> <em>If you made changes to the theme files you "
+"will probably lose theme settings when updating. In that case we recommend "
+"to backup your theme folder first, look at <strong>changes.txt</strong> file "
+"contained into the new theme version package and manually update only the "
+"files that have been changed.</em>"
+msgstr ""
+
+#: mokaine/meta/cmb/CMB2.php:96
+msgid "Metabox configuration is required to have an ID parameter"
+msgstr ""
+
+#: mokaine/meta/cmb/includes/CMB2_Ajax.php:37
+msgid "Please Try Again"
+msgstr ""
+
+#: mokaine/meta/cmb/includes/CMB2_Ajax.php:133
+msgid "Remove Embed"
+msgstr ""
+
+#: mokaine/meta/cmb/includes/CMB2_Ajax.php:137
+#, php-format
+msgid "No oEmbed Results Found for %s. View more info at"
+msgstr ""
+
+#: mokaine/meta/cmb/includes/CMB2_Field.php:575
+msgid "Add Group"
+msgstr ""
+
+#: mokaine/meta/cmb/includes/CMB2_Field.php:576
+msgid "Remove Group"
+msgstr ""
+
+#: mokaine/meta/cmb/includes/CMB2_Field.php:597
+#: mokaine/meta/meta-config.php:231
+#: mokaine/shortcodes/shortcode-functions.php:1024
+#: mokaine/shortcodes/shortcode-functions.php:1229
+#: mokaine/shortcodes/shortcode-functions.php:1278
+#: mokaine/shortcodes/shortcode-functions.php:1582
+#: mokaine/shortcodes/shortcode-functions.php:1632
+msgid "None"
+msgstr ""
+
+#: mokaine/meta/cmb/includes/CMB2_Types.php:288
+msgid "Add Row"
+msgstr ""
+
+#: mokaine/meta/cmb/includes/CMB2_Types.php:670
+#: mokaine/meta/cmb/includes/CMB2_Types.php:718
+msgid "No terms"
+msgstr ""
+
+#: mokaine/meta/cmb/includes/CMB2_Types.php:762
+#: mokaine/meta/cmb/includes/CMB2_Types.php:819
+msgid "Add or Upload File"
+msgstr ""
+
+#: mokaine/meta/cmb/includes/CMB2_Types.php:783
+#: mokaine/meta/cmb/includes/CMB2_Types.php:866
+#: mokaine/meta/cmb/includes/CMB2_hookup.php:172
+msgid "Remove Image"
+msgstr ""
+
+#: mokaine/meta/cmb/includes/CMB2_Types.php:794
+#: mokaine/meta/cmb/includes/CMB2_Types.php:874
+#: mokaine/meta/cmb/includes/CMB2_hookup.php:174
+msgid "File:"
+msgstr ""
+
+#: mokaine/meta/cmb/includes/CMB2_Types.php:794
+#: mokaine/meta/cmb/includes/CMB2_Types.php:874
+#: mokaine/meta/cmb/includes/CMB2_hookup.php:175
+msgid "Download"
+msgstr ""
+
+#: mokaine/meta/cmb/includes/CMB2_hookup.php:123
+#: mokaine/meta/cmb/includes/CMB2_hookup.php:160
+msgid "Clear"
+msgstr ""
+
+#: mokaine/meta/cmb/includes/CMB2_hookup.php:125
+msgid "Select Color"
+msgstr ""
+
+#: mokaine/meta/cmb/includes/CMB2_hookup.php:126
+msgid "Current Color"
+msgstr ""
+
+#: mokaine/meta/cmb/includes/CMB2_hookup.php:150
+msgid "mm/dd/yy"
+msgstr ""
+
+#: mokaine/meta/cmb/includes/CMB2_hookup.php:151
+msgid "Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday"
+msgstr ""
+
+#: mokaine/meta/cmb/includes/CMB2_hookup.php:152
+msgid "Su, Mo, Tu, We, Th, Fr, Sa"
+msgstr ""
+
+#: mokaine/meta/cmb/includes/CMB2_hookup.php:153
+msgid "Sun, Mon, Tue, Wed, Thu, Fri, Sat"
+msgstr ""
+
+#: mokaine/meta/cmb/includes/CMB2_hookup.php:154
+msgid ""
+"January, February, March, April, May, June, July, August, September, "
+"October, November, December"
+msgstr ""
+
+#: mokaine/meta/cmb/includes/CMB2_hookup.php:155
+msgid "Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec"
+msgstr ""
+
+#: mokaine/meta/cmb/includes/CMB2_hookup.php:156
+msgid "Next"
+msgstr ""
+
+#: mokaine/meta/cmb/includes/CMB2_hookup.php:157
+msgid "Prev"
+msgstr ""
+
+#: mokaine/meta/cmb/includes/CMB2_hookup.php:158
+msgid "Today"
+msgstr ""
+
+#: mokaine/meta/cmb/includes/CMB2_hookup.php:159
+msgid "Done"
+msgstr ""
+
+#: mokaine/meta/cmb/includes/CMB2_hookup.php:171
+msgid "Use this file"
+msgstr ""
+
+#: mokaine/meta/cmb/includes/CMB2_hookup.php:176
+msgid "Select / Deselect All"
+msgstr ""
+
+#: mokaine/meta/cmb/includes/helper-functions.php:226
+msgid "Save"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:19
+msgid "Compose Intro"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:29
+msgid "Slide {#}"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:30
+msgid "Add Another Slide"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:31
+msgid "Remove Slide"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:37
+msgid "Slide type"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:38
+msgid "What kind of slide is this?"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:43
+msgid "Image Background"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:44
+msgid "Device Mockup"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:45
+#: mokaine/shortcodes/shortcode-functions.php:1355
+msgid "Map"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:49
+msgid "Select image"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:51
+msgid "Upload the image or type the image URL"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:59
+#: mokaine/shortcodes/shortcode-functions.php:62
+msgid "Background color"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:65
+msgid "Slide font color"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:70
+msgid "Light"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:71
+#: mokaine/shortcodes/shortcode-functions.php:1472
+msgid "Dark"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:75
+msgid "Slide title"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:80
+msgid "Slide subtitle"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:83 mokaine/meta/meta-config.php:92
+msgid "HTML is allowed"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:89
+msgid "Credits box"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:98
+msgid "Show button"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:101
+msgid "Disable if you want to hide the button"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:104
+#: mokaine/shortcodes/shortcode-functions.php:348
+#: mokaine/shortcodes/shortcode-functions.php:1078
+#: mokaine/shortcodes/shortcode-functions.php:1718
+#: mokaine/shortcodes/shortcode-functions.php:1799
+#: mokaine/shortcodes/shortcode-functions.php:1874
+msgid "Button text"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:109
+#: mokaine/shortcodes/shortcode-functions.php:363
+#: mokaine/shortcodes/shortcode-functions.php:1083
+#: mokaine/shortcodes/shortcode-functions.php:1723
+#: mokaine/shortcodes/shortcode-functions.php:1804
+#: mokaine/shortcodes/shortcode-functions.php:1879
+msgid "Button link"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:114
+#: mokaine/shortcodes/shortcode-functions.php:367
+#: mokaine/shortcodes/shortcode-functions.php:1087
+#: mokaine/shortcodes/shortcode-functions.php:1727
+#: mokaine/shortcodes/shortcode-functions.php:1808
+#: mokaine/shortcodes/shortcode-functions.php:1883
+msgid "Button style"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:118
+#: mokaine/shortcodes/shortcode-functions.php:369
+#: mokaine/shortcodes/shortcode-functions.php:1089
+#: mokaine/shortcodes/shortcode-functions.php:1729
+#: mokaine/shortcodes/shortcode-functions.php:1811
+#: mokaine/shortcodes/shortcode-functions.php:1885
+msgid "Solid"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:123
+#: mokaine/shortcodes/shortcode-functions.php:375
+#: mokaine/shortcodes/shortcode-functions.php:1095
+#: mokaine/shortcodes/shortcode-functions.php:1735
+#: mokaine/shortcodes/shortcode-functions.php:1817
+#: mokaine/shortcodes/shortcode-functions.php:1891
+msgid "Button color"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:128
+#: mokaine/shortcodes/shortcode-functions.php:377
+#: mokaine/shortcodes/shortcode-functions.php:1025
+#: mokaine/shortcodes/shortcode-functions.php:1097
+#: mokaine/shortcodes/shortcode-functions.php:1230
+#: mokaine/shortcodes/shortcode-functions.php:1279
+#: mokaine/shortcodes/shortcode-functions.php:1737
+#: mokaine/shortcodes/shortcode-functions.php:1819
+#: mokaine/shortcodes/shortcode-functions.php:1893
+msgid "Red"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:129
+#: mokaine/shortcodes/shortcode-functions.php:378
+#: mokaine/shortcodes/shortcode-functions.php:1026
+#: mokaine/shortcodes/shortcode-functions.php:1098
+#: mokaine/shortcodes/shortcode-functions.php:1231
+#: mokaine/shortcodes/shortcode-functions.php:1280
+#: mokaine/shortcodes/shortcode-functions.php:1738
+#: mokaine/shortcodes/shortcode-functions.php:1820
+#: mokaine/shortcodes/shortcode-functions.php:1894
+msgid "Orange"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:130
+#: mokaine/shortcodes/shortcode-functions.php:379
+#: mokaine/shortcodes/shortcode-functions.php:1027
+#: mokaine/shortcodes/shortcode-functions.php:1099
+#: mokaine/shortcodes/shortcode-functions.php:1232
+#: mokaine/shortcodes/shortcode-functions.php:1281
+#: mokaine/shortcodes/shortcode-functions.php:1739
+#: mokaine/shortcodes/shortcode-functions.php:1821
+#: mokaine/shortcodes/shortcode-functions.php:1895
+msgid "Yellow"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:131
+#: mokaine/shortcodes/shortcode-functions.php:380
+#: mokaine/shortcodes/shortcode-functions.php:1028
+#: mokaine/shortcodes/shortcode-functions.php:1100
+#: mokaine/shortcodes/shortcode-functions.php:1233
+#: mokaine/shortcodes/shortcode-functions.php:1282
+#: mokaine/shortcodes/shortcode-functions.php:1740
+#: mokaine/shortcodes/shortcode-functions.php:1822
+#: mokaine/shortcodes/shortcode-functions.php:1896
+msgid "Green"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:132
+#: mokaine/shortcodes/shortcode-functions.php:381
+#: mokaine/shortcodes/shortcode-functions.php:1029
+#: mokaine/shortcodes/shortcode-functions.php:1101
+#: mokaine/shortcodes/shortcode-functions.php:1234
+#: mokaine/shortcodes/shortcode-functions.php:1283
+#: mokaine/shortcodes/shortcode-functions.php:1741
+#: mokaine/shortcodes/shortcode-functions.php:1823
+#: mokaine/shortcodes/shortcode-functions.php:1897
+msgid "Mint"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:133
+#: mokaine/shortcodes/shortcode-functions.php:382
+#: mokaine/shortcodes/shortcode-functions.php:1030
+#: mokaine/shortcodes/shortcode-functions.php:1102
+#: mokaine/shortcodes/shortcode-functions.php:1235
+#: mokaine/shortcodes/shortcode-functions.php:1284
+#: mokaine/shortcodes/shortcode-functions.php:1742
+#: mokaine/shortcodes/shortcode-functions.php:1824
+#: mokaine/shortcodes/shortcode-functions.php:1898
+msgid "Aqua"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:134
+#: mokaine/shortcodes/shortcode-functions.php:383
+#: mokaine/shortcodes/shortcode-functions.php:1031
+#: mokaine/shortcodes/shortcode-functions.php:1103
+#: mokaine/shortcodes/shortcode-functions.php:1236
+#: mokaine/shortcodes/shortcode-functions.php:1285
+#: mokaine/shortcodes/shortcode-functions.php:1743
+#: mokaine/shortcodes/shortcode-functions.php:1825
+#: mokaine/shortcodes/shortcode-functions.php:1899
+msgid "Blue"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:135
+#: mokaine/shortcodes/shortcode-functions.php:384
+#: mokaine/shortcodes/shortcode-functions.php:1032
+#: mokaine/shortcodes/shortcode-functions.php:1104
+#: mokaine/shortcodes/shortcode-functions.php:1237
+#: mokaine/shortcodes/shortcode-functions.php:1286
+#: mokaine/shortcodes/shortcode-functions.php:1744
+#: mokaine/shortcodes/shortcode-functions.php:1826
+#: mokaine/shortcodes/shortcode-functions.php:1900
+msgid "Purple"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:136
+#: mokaine/shortcodes/shortcode-functions.php:385
+#: mokaine/shortcodes/shortcode-functions.php:1033
+#: mokaine/shortcodes/shortcode-functions.php:1105
+#: mokaine/shortcodes/shortcode-functions.php:1238
+#: mokaine/shortcodes/shortcode-functions.php:1287
+#: mokaine/shortcodes/shortcode-functions.php:1745
+#: mokaine/shortcodes/shortcode-functions.php:1827
+#: mokaine/shortcodes/shortcode-functions.php:1901
+msgid "Pink"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:137
+#: mokaine/shortcodes/shortcode-functions.php:386
+#: mokaine/shortcodes/shortcode-functions.php:1034
+#: mokaine/shortcodes/shortcode-functions.php:1106
+#: mokaine/shortcodes/shortcode-functions.php:1239
+#: mokaine/shortcodes/shortcode-functions.php:1288
+#: mokaine/shortcodes/shortcode-functions.php:1465
+#: mokaine/shortcodes/shortcode-functions.php:1473
+#: mokaine/shortcodes/shortcode-functions.php:1520
+#: mokaine/shortcodes/shortcode-functions.php:1746
+#: mokaine/shortcodes/shortcode-functions.php:1828
+#: mokaine/shortcodes/shortcode-functions.php:1902
+msgid "White"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:138
+#: mokaine/shortcodes/shortcode-functions.php:387
+#: mokaine/shortcodes/shortcode-functions.php:1035
+#: mokaine/shortcodes/shortcode-functions.php:1107
+#: mokaine/shortcodes/shortcode-functions.php:1240
+#: mokaine/shortcodes/shortcode-functions.php:1289
+#: mokaine/shortcodes/shortcode-functions.php:1747
+#: mokaine/shortcodes/shortcode-functions.php:1829
+#: mokaine/shortcodes/shortcode-functions.php:1903
+msgid "Grey"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:139
+#: mokaine/shortcodes/shortcode-functions.php:388
+#: mokaine/shortcodes/shortcode-functions.php:1036
+#: mokaine/shortcodes/shortcode-functions.php:1108
+#: mokaine/shortcodes/shortcode-functions.php:1241
+#: mokaine/shortcodes/shortcode-functions.php:1290
+#: mokaine/shortcodes/shortcode-functions.php:1748
+#: mokaine/shortcodes/shortcode-functions.php:1830
+#: mokaine/shortcodes/shortcode-functions.php:1904
+msgid "Dark grey"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:143
+#: mokaine/shortcodes/shortcode-functions.php:393
+#: mokaine/shortcodes/shortcode-functions.php:1113
+#: mokaine/shortcodes/shortcode-functions.php:1753
+#: mokaine/shortcodes/shortcode-functions.php:1836
+#: mokaine/shortcodes/shortcode-functions.php:1909
+msgid "Open link in a new tab?"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:146
+#: mokaine/shortcodes/shortcode-functions.php:394
+#: mokaine/shortcodes/shortcode-functions.php:1114
+#: mokaine/shortcodes/shortcode-functions.php:1754
+#: mokaine/shortcodes/shortcode-functions.php:1835
+#: mokaine/shortcodes/shortcode-functions.php:1910
+msgid "Check this if you want to open the link in a new page"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:149
+msgid "Mockup layout"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:150
+msgid "Specify the caption position"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:161
+#: mokaine/shortcodes/shortcode-functions.php:1359
+msgid "Map Latitude"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:162
+msgid ""
+"Specify the latitude for the pin (find it out <a href=\"http://itouchmap.com/"
+"latlong.html\" target=\"_blank\">here</a>)"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:168
+#: mokaine/shortcodes/shortcode-functions.php:1365
+msgid "Map Longitude"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:169
+msgid ""
+"Specify the longitude for the pin (find it out <a href=\"http://itouchmap."
+"com/latlong.html\" target=\"_blank\">here</a>)"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:175
+#: mokaine/shortcodes/shortcode-functions.php:1376
+msgid "Map zoom level"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:176
+#: mokaine/shortcodes/shortcode-functions.php:1377
+msgid "The initial resolution at which to display the map"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:182
+#: mokaine/shortcodes/shortcode-functions.php:1382
+msgid "Map style"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:185
+#: mokaine/shortcodes/shortcode-functions.php:1383
+msgid "Choose a style preset for your map"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:189
+#: mokaine/shortcodes/shortcode-functions.php:1386
+msgid "Reversed colors"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:193
+#: mokaine/shortcodes/shortcode-functions.php:1397
+msgid "Image marker"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:195
+#: mokaine/shortcodes/shortcode-functions.php:1398
+msgid "Set a different image for the marker. Default marker URL:<br><strong>"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:199
+#: mokaine/shortcodes/shortcode-functions.php:1402
+msgid "Tooltip content"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:202
+#: mokaine/shortcodes/shortcode-functions.php:1403
+msgid "Type here what you want to show in the tooltip"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:205
+#: mokaine/shortcodes/shortcode-functions.php:78
+#: mokaine/shortcodes/shortcode-functions.php:114
+#: mokaine/shortcodes/shortcode-functions.php:145
+#: mokaine/shortcodes/shortcode-functions.php:176
+#: mokaine/shortcodes/shortcode-functions.php:207
+#: mokaine/shortcodes/shortcode-functions.php:238
+#: mokaine/shortcodes/shortcode-functions.php:269
+#: mokaine/shortcodes/shortcode-functions.php:300
+#: mokaine/shortcodes/shortcode-functions.php:326
+#: mokaine/shortcodes/shortcode-functions.php:399
+#: mokaine/shortcodes/shortcode-functions.php:1055
+#: mokaine/shortcodes/shortcode-functions.php:1408
+msgid "Extra class"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:208
+#: mokaine/shortcodes/shortcode-functions.php:79
+#: mokaine/shortcodes/shortcode-functions.php:115
+#: mokaine/shortcodes/shortcode-functions.php:146
+#: mokaine/shortcodes/shortcode-functions.php:177
+#: mokaine/shortcodes/shortcode-functions.php:208
+#: mokaine/shortcodes/shortcode-functions.php:239
+#: mokaine/shortcodes/shortcode-functions.php:270
+#: mokaine/shortcodes/shortcode-functions.php:301
+#: mokaine/shortcodes/shortcode-functions.php:327
+#: mokaine/shortcodes/shortcode-functions.php:400
+#: mokaine/shortcodes/shortcode-functions.php:1056
+#: mokaine/shortcodes/shortcode-functions.php:1409
+msgid "Type a custom class name for CSS purposes"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:211
+msgid "<span class=\"intro-more-options\">[+] Show more options</span>"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:223 mokaine/meta/meta-config.php:286
+msgid "Intro settings"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:230
+msgid "Select Intro"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:232
+msgid "Pick an <a href=\""
+msgstr ""
+
+#: mokaine/meta/meta-config.php:239 mokaine/meta/meta-config.php:299
+msgid "Full height"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:242
+msgid "When checked, this setting overwrites any height value"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:245
+#: mokaine/shortcodes/shortcode-functions.php:1478
+#: mokaine/shortcodes/shortcode-functions.php:1533
+#: mokaine/shortcodes/shortcode-functions.php:1568
+#: mokaine/shortcodes/shortcode-functions.php:1618
+msgid "Autoplay"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:248
+msgid ""
+"Ms (milliseconds) value (e.g. type &quot;5000&quot; for 5 seconds). Leave it "
+"blank to disable autoplay"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:257
+msgid "Show arrows"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:260
+msgid "Arrows show up just in case intro has two or more slide"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:263
+#: mokaine/shortcodes/shortcode-functions.php:1574
+#: mokaine/shortcodes/shortcode-functions.php:1624
+msgid "Show bullets"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:266
+msgid "Bullets show up just in case intro has two or more slide"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:269 mokaine/meta/meta-config.php:305
+msgid "Show scroll arrow"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:272
+msgid "Disabled if &lsquo;Show bullets&rsquo; is enabled"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:275 mokaine/meta/meta-config.php:311
+msgid "Darken layer"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:278
+msgid ""
+"Enable to make images darker. It has no effect on &lsquo;Device "
+"mockup&rsquo; slides"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:293
+msgid "Use the Featured image as intro"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:296
+msgid "When checked, the featured image shows up into the intro area"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:302
+msgid "Enable if you have a full page intro"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:308
+msgid "Enable to show the mouse icon at the bottom of the intro"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:314
+msgid "Enable to make images darker"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:322 mokaine/meta/meta-config.php:371
+msgid "Layout settings"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:330
+msgid "Columns number"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:333
+msgid "Select the number of column you wish to show"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:336
+#: mokaine/shortcodes/shortcode-functions.php:1781
+msgid "2 Columns"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:337
+#: mokaine/shortcodes/shortcode-functions.php:1782
+msgid "3 Columns"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:338
+#: mokaine/shortcodes/shortcode-functions.php:1783
+msgid "4 Columns"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:342
+msgid "Items per page"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:343
+msgid ""
+"Set the number of items to show on portfolio pages. Type <strong>-1</strong> "
+"to disable pagination and show all items"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:354
+msgid "Mosaic layout"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:357
+msgid "Check to preserve thumbnails original height"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:360
+#: mokaine/shortcodes/shortcode-functions.php:1795
+msgid "Lightbox"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:363
+#: mokaine/shortcodes/shortcode-functions.php:1794
+msgid "Check to enable a lightbox gallery"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:379
+#: mokaine/shortcodes/shortcode-functions.php:1698
+msgid "Blog style"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:382
+msgid "Select the style you want for this page"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:385
+#: mokaine/shortcodes/shortcode-functions.php:1700
+msgid "List style"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:386
+#: mokaine/shortcodes/shortcode-functions.php:1701
+msgid "Masonry style"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:390
+msgid "Posts per page"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:391
+msgid ""
+"Set the number of posts to show on blog pages. Type <strong>-1</strong> to "
+"disable pagination and show all posts"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:429
+msgid "If you leave it empty, the widget will not show up"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:438
+msgid "You have not set any Portfolio sidebar widget yet. <a href=\""
+msgstr ""
+
+#: mokaine/meta/meta-config.php:455
+msgid "Enable portfolio sidebar"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:458
+msgid "Enable to display the portfolio sidebar on this item"
+msgstr ""
+
+#: mokaine/meta/meta-config.php:491
+msgid "Use the Featured image"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:53
+msgid "Sections"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:58
+msgid "Full Width Section"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:66
+msgid "Text color"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:74
+msgid "Section title"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:83
+#: mokaine/shortcodes/shortcode-functions.php:119
+#: mokaine/shortcodes/shortcode-functions.php:150
+#: mokaine/shortcodes/shortcode-functions.php:181
+#: mokaine/shortcodes/shortcode-functions.php:212
+#: mokaine/shortcodes/shortcode-functions.php:243
+#: mokaine/shortcodes/shortcode-functions.php:274
+#: mokaine/shortcodes/shortcode-functions.php:305
+#: mokaine/shortcodes/shortcode-functions.php:331
+#: mokaine/shortcodes/shortcode-functions.php:1317
+#: mokaine/shortcodes/shortcode-functions.php:1347
+#: mokaine/shortcodes/shortcode-functions.php:1371
+#: mokaine/shortcodes/shortcode-functions.php:1758
+#: mokaine/shortcodes/shortcode-functions.php:1840
+#: mokaine/shortcodes/shortcode-functions.php:1914
+msgid "Note:"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:84
+msgid ""
+"For better results, use <strong>Full Width Sections</strong> only on "
+"<strong>Blank page</strong> templates"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:91
+#: mokaine/shortcodes/shortcode-functions.php:1779
+#: mokaine/shortcodes/shortcode-functions.php:1860
+msgid "Columns"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:96
+msgid "One Half (1/2)"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:100
+#: mokaine/shortcodes/shortcode-functions.php:131
+#: mokaine/shortcodes/shortcode-functions.php:162
+#: mokaine/shortcodes/shortcode-functions.php:193
+#: mokaine/shortcodes/shortcode-functions.php:224
+#: mokaine/shortcodes/shortcode-functions.php:255
+#: mokaine/shortcodes/shortcode-functions.php:286
+#: mokaine/shortcodes/shortcode-functions.php:317
+msgid "Column content"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:104
+#: mokaine/shortcodes/shortcode-functions.php:135
+#: mokaine/shortcodes/shortcode-functions.php:166
+#: mokaine/shortcodes/shortcode-functions.php:197
+#: mokaine/shortcodes/shortcode-functions.php:228
+#: mokaine/shortcodes/shortcode-functions.php:259
+#: mokaine/shortcodes/shortcode-functions.php:290
+#: mokaine/shortcodes/shortcode-functions.php:321
+msgid "Centered text"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:105
+#: mokaine/shortcodes/shortcode-functions.php:136
+#: mokaine/shortcodes/shortcode-functions.php:167
+#: mokaine/shortcodes/shortcode-functions.php:198
+#: mokaine/shortcodes/shortcode-functions.php:229
+#: mokaine/shortcodes/shortcode-functions.php:260
+#: mokaine/shortcodes/shortcode-functions.php:291
+#: mokaine/shortcodes/shortcode-functions.php:322
+msgid "Check this to center the column content"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:109
+#: mokaine/shortcodes/shortcode-functions.php:140
+#: mokaine/shortcodes/shortcode-functions.php:171
+#: mokaine/shortcodes/shortcode-functions.php:202
+#: mokaine/shortcodes/shortcode-functions.php:233
+#: mokaine/shortcodes/shortcode-functions.php:264
+#: mokaine/shortcodes/shortcode-functions.php:295
+msgid "Last column"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:110
+#: mokaine/shortcodes/shortcode-functions.php:141
+#: mokaine/shortcodes/shortcode-functions.php:172
+#: mokaine/shortcodes/shortcode-functions.php:203
+#: mokaine/shortcodes/shortcode-functions.php:234
+#: mokaine/shortcodes/shortcode-functions.php:265
+#: mokaine/shortcodes/shortcode-functions.php:296
+msgid "Check this if it&lsquo;s the last column in the row"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:120
+#: mokaine/shortcodes/shortcode-functions.php:151
+#: mokaine/shortcodes/shortcode-functions.php:182
+#: mokaine/shortcodes/shortcode-functions.php:213
+#: mokaine/shortcodes/shortcode-functions.php:244
+#: mokaine/shortcodes/shortcode-functions.php:275
+#: mokaine/shortcodes/shortcode-functions.php:306
+#: mokaine/shortcodes/shortcode-functions.php:332
+msgid ""
+"If you are using a <strong>Blank page</strong> template, we recommend to "
+"nest <strong>columns</strong> shortcodes into a <strong>Full Width Section</"
+"strong> shortcode."
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:127
+msgid "One Third (1/3)"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:158
+msgid "Two Thirds (2/3)"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:189
+msgid "One Fourth (1/4)"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:220
+msgid "Three Fourths (3/4)"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:251
+msgid "One Sixth (1/6)"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:282
+msgid "Five Sixth (5/6)"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:313
+msgid "One Whole (1/1)"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:339
+msgid "Elements"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:344
+#: mokaine/shortcodes/shortcode-functions.php:349
+#: mokaine/shortcodes/shortcode-functions.php:1079
+#: mokaine/shortcodes/shortcode-functions.php:1719
+#: mokaine/shortcodes/shortcode-functions.php:1800
+#: mokaine/shortcodes/shortcode-functions.php:1875
+msgid "Button"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1018
+msgid "Icon"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1022
+#: mokaine/shortcodes/shortcode-functions.php:1227
+#: mokaine/shortcodes/shortcode-functions.php:1276
+msgid "Icon color"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1041
+#: mokaine/shortcodes/shortcode-functions.php:1246
+#: mokaine/shortcodes/shortcode-functions.php:1295
+msgid "Icon set"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1044
+#: mokaine/shortcodes/shortcode-functions.php:1249
+#: mokaine/shortcodes/shortcode-functions.php:1298
+msgid "Font Awesome"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1048
+#: mokaine/shortcodes/shortcode-functions.php:1253
+#: mokaine/shortcodes/shortcode-functions.php:1302
+msgid "Linecons"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1063
+msgid "CTA - Call To Action"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1068
+#: mokaine/shortcodes/shortcode-functions.php:1131
+#: mokaine/shortcodes/shortcode-functions.php:1159
+#: mokaine/shortcodes/shortcode-functions.php:1192
+#: mokaine/shortcodes/shortcode-functions.php:1421
+#: mokaine/shortcodes/shortcode-functions.php:1446
+#: mokaine/shortcodes/shortcode-functions.php:1501
+#: mokaine/shortcodes/shortcode-functions.php:1563
+#: mokaine/shortcodes/shortcode-functions.php:1613
+msgid "Unlock this feature!"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1069
+#: mokaine/shortcodes/shortcode-functions.php:1132
+#: mokaine/shortcodes/shortcode-functions.php:1160
+#: mokaine/shortcodes/shortcode-functions.php:1193
+#: mokaine/shortcodes/shortcode-functions.php:1422
+#: mokaine/shortcodes/shortcode-functions.php:1447
+#: mokaine/shortcodes/shortcode-functions.php:1502
+#: mokaine/shortcodes/shortcode-functions.php:1564
+#: mokaine/shortcodes/shortcode-functions.php:1614
+msgid ""
+"<p class=\"pro-message\">This shortcode is not available in Beetle Go. "
+"Purchase <strong>Beetle Pro</strong> to unlock it!</p><div><a class=\"button"
+"\" href=\"http://mokaine.com/beetle-pro-wordpress-theme/\">Discover "
+"<strong>Beetle Pro</strong></a></div>"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1073
+msgid "CTA slogan"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1074
+#: mokaine/shortcodes/shortcode-functions.php:1142
+msgid "Introducing Beetle, a new flat WordPress theme."
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1118
+#: mokaine/shortcodes/shortcode-functions.php:1146
+msgid "Enable animation"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1119
+#: mokaine/shortcodes/shortcode-functions.php:1147
+msgid "Check this to enable a reveal animation"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1126
+msgid "Slogan"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1137
+msgid "A title for your slogan"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1141
+#: mokaine/shortcodes/shortcode-functions.php:1313
+#: mokaine/shortcodes/shortcode-functions.php:1673
+msgid "Content"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1154
+msgid "Skills ring"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1164
+msgid "The percent number of your ring (from 1 to 100)"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1165
+msgid "Percent"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1169
+msgid "The label to display under the number"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1170
+msgid "Ring label"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1174
+msgid "Ring color"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1178
+#: mokaine/shortcodes/shortcode-functions.php:1215
+msgid "Animation time"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1179
+#: mokaine/shortcodes/shortcode-functions.php:1216
+msgid ""
+"The number of milliseconds it should take to finish counting (e.g. type "
+"\"2000\" for 2 seconds)"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1187
+msgid "Milestone"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1197
+msgid "The label to show under the number"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1198
+msgid "Label"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1199
+msgid "Visitors"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1203
+msgid "The number to start counting from"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1204
+msgid "Start number"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1209
+msgid "The number to stop counting at"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1210
+msgid "End number"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1221
+msgid "Refresh interval"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1222
+msgid "The number of milliseconds to wait between refreshing the counter"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1263
+msgid "Service"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1267
+msgid "Icon size"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1269
+msgid "Small"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1270
+msgid "Big"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1318
+msgid ""
+"For better results, we recommend to nest each <strong>service</strong> "
+"element into <strong>columns</strong> shortcodes."
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1325
+msgid "Team Member"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1329
+#: mokaine/shortcodes/shortcode-functions.php:2197
+msgid "Image"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1330
+msgid "Min. recommended size: 320x320px"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1338
+msgid "Role"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1342
+#: mokaine/shortcodes/shortcode-functions.php:1657
+msgid "Social buttons"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1343
+#: mokaine/shortcodes/shortcode-functions.php:1658
+msgid ""
+"Enter any social media links with a comma separated list (e.g. Facebook,"
+"http://facebook.com, Twitter,http://twitter.com)"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1348
+msgid ""
+"For better results, we recommend to nest each <strong>team member</strong> "
+"items into <strong>columns</strong> shortcodes."
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1360
+msgid ""
+"Set the latitude (find it out <a href=\"http://itouchmap.com/latlong.html\" "
+"target=\"_blank\">here</a>)"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1366
+msgid ""
+"Set the longitude (find it out <a href=\"http://itouchmap.com/latlong.html\" "
+"target=\"_blank\">here</a>)"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1372
+msgid ""
+"Don&lsquo;t leave latitude and longitude empty or the map does not show up"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1391
+msgid "Map height"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1392
+msgid "Map height in em"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1404
+msgid "I live here"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1416
+msgid "Timeline"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1426
+#: mokaine/shortcodes/shortcode-functions.php:1538
+msgid "Aside title"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1427
+#: mokaine/shortcodes/shortcode-functions.php:1539
+msgid "Title of the aside section"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1432
+#: mokaine/shortcodes/shortcode-functions.php:1544
+msgid "Aside content"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1433
+#: mokaine/shortcodes/shortcode-functions.php:1545
+msgid "Lorem ipsum ..."
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1441
+msgid "Mockup Carousel"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1451
+#: mokaine/shortcodes/shortcode-functions.php:1506
+msgid "Mockup device"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1453
+#: mokaine/shortcodes/shortcode-functions.php:1508
+msgid "iPhone"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1454
+#: mokaine/shortcodes/shortcode-functions.php:1509
+msgid "iPad"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1455
+#: mokaine/shortcodes/shortcode-functions.php:1510
+msgid "Desktop"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1461
+msgid "Mockup color"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1462
+#: mokaine/shortcodes/shortcode-functions.php:1517
+msgid "Note: This option has no effect on \"Desktop\" mockups"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1464
+#: mokaine/shortcodes/shortcode-functions.php:1519
+msgid "Black"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1470
+msgid "Arrows color"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1479
+#: mokaine/shortcodes/shortcode-functions.php:1534
+#: mokaine/shortcodes/shortcode-functions.php:1569
+#: mokaine/shortcodes/shortcode-functions.php:1619
+msgid ""
+"Ms (milliseconds e.g. type \"5000\" for 5 seconds). Leave it blank to "
+"disable autoplay"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1483
+msgid "Rewind speed"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1484
+msgid "Rewind speed in milliseconds value (e.g. type \"1000\" for 1 seconds)"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1488
+#: mokaine/shortcodes/shortcode-functions.php:1550
+#: mokaine/shortcodes/shortcode-functions.php:2216
+msgid "Screen"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1489
+#: mokaine/shortcodes/shortcode-functions.php:1551
+msgid ""
+"iPhone image size: <strong>375x667px (min)</strong> or <strong>750x1334px "
+"(max)</strong><br>iPad image size: <strong>504x378px (min)</strong> or "
+"<strong>1008x756px (max)</strong><br>Desktop image size: <strong>574x315px "
+"(min)</strong> or <strong>1148x630px (max)</strong>"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1496
+msgid "Half Mockup Carousel"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1516
+msgid "Device color"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1525
+msgid "Mockup position"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1527
+msgid "Align left"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1528
+msgid "Align right"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1558
+msgid "Testimonial Slider"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1575
+#: mokaine/shortcodes/shortcode-functions.php:1625
+msgid "Check this if you want to show pagination bullets"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1579
+msgid "Transition Style"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1580
+#: mokaine/shortcodes/shortcode-functions.php:1630
+msgid "CSS transition style for the slider"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1583
+#: mokaine/shortcodes/shortcode-functions.php:1633
+msgid "Fade"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1584
+#: mokaine/shortcodes/shortcode-functions.php:1634
+msgid "Back Slide"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1585
+#: mokaine/shortcodes/shortcode-functions.php:1635
+msgid "Go Down"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1586
+#: mokaine/shortcodes/shortcode-functions.php:1636
+msgid "Fade Up"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1587
+#: mokaine/shortcodes/shortcode-functions.php:1637
+msgid "Scale Down"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1588
+#: mokaine/shortcodes/shortcode-functions.php:1638
+msgid "Scale Down Right"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1589
+#: mokaine/shortcodes/shortcode-functions.php:1639
+msgid "Scale Up Left"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1590
+#: mokaine/shortcodes/shortcode-functions.php:1640
+msgid "Fade top"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1591
+#: mokaine/shortcodes/shortcode-functions.php:1641
+msgid "Overlap"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1596
+msgid "Centered Text"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1597
+msgid "Check this to center the content"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1601
+msgid "Min. recommended size: 160x160px"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1608
+msgid "Custom Carousel"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1629
+msgid "Transition style"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1649
+msgid "Social Widget"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1653
+#: mokaine/shortcodes/shortcode-functions.php:1669
+msgid "Widget title"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1665
+msgid "Text Widget"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1680
+msgid "Blog / Portfolio / Dribbble"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1694
+msgid "Blog"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1706
+msgid "Articles to show"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1707
+msgid "The number of articles you want to show"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1713
+msgid ""
+"Select the categories you want to show for your blog. <br/>You can select "
+"multiple categories too (ctrl + click on PC and command + click on Mac)."
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1759
+msgid ""
+"If you are using a <strong>Blank page</strong> template, we recommend to "
+"nest the <strong>blog</strong> shortcode into a <strong>Full Width Section</"
+"strong> shortcode."
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1788
+#: mokaine/shortcodes/shortcode-functions.php:1868
+msgid "Items to show"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1789
+msgid "The number of items you want to show"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1841
+msgid ""
+"If you are using a <strong>Blank page</strong> template, we recommend to "
+"nest the <strong>portfolio</strong> shortcode into a <strong>Full Width "
+"Section</strong> shortcode."
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1851
+msgid "Dribbble Portfolio"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1855
+msgid "Dribbble username"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1856
+msgid ""
+"E.g. &lsquo;frankiefreesbie&lsquo; (spot it from the url &lsquo;https://"
+"dribbble.com/frankiefreesbie&lsquo;)"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1869
+msgid "The number of dribbble items you want to show"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1915
+msgid ""
+"If you are using a <strong>Blank page</strong> template, we recommend to "
+"nest the <strong>dribbble</strong> shortcode into a <strong>Full Width "
+"Section</strong> shortcode."
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1928 mokaine/start.php:54
+msgid "Mokaine Shortcodes"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1930
+msgid "Choose a shortcode"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:1981
+msgid "Add Shortcode"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:2137
+msgid ""
+"You&lsquo;re using an outdated version of WordPress. Please update to use "
+"this feature."
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:2150
+#: mokaine/shortcodes/shortcode-functions.php:2201
+#: mokaine/shortcodes/shortcode-functions.php:2220
+msgid "Select File"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:2150
+#: mokaine/shortcodes/shortcode-functions.php:2201
+#: mokaine/shortcodes/shortcode-functions.php:2220
+msgid "Choose a file"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:2151
+#: mokaine/shortcodes/shortcode-functions.php:2202
+#: mokaine/shortcodes/shortcode-functions.php:2221
+msgid "Remove Upload"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:2190
+msgid "Author"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:2194
+msgid "Quote"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:2208
+msgid "Remove Testimonial"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:2208
+msgid "Add Testimonial"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:2226
+msgid "Remove Screen"
+msgstr ""
+
+#: mokaine/shortcodes/shortcode-functions.php:2226
+msgid "Add Screen"
+msgstr ""
+
+#: mokaine/start.php:64
+msgid "[-] Show less options"
+msgstr ""
+
+#: mokaine/start.php:64
+msgid "[+] Show more options"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:226
+#: mokaine/tgm-plugin-activation/required-plugins.php:71
+msgid "Install Required Plugins"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:227
+#: mokaine/tgm-plugin-activation/required-plugins.php:72
+msgid "Install Plugins"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:228
+#: mokaine/tgm-plugin-activation/required-plugins.php:73
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:229
+msgid "Something went wrong."
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:230
+#: mokaine/tgm-plugin-activation/required-plugins.php:75
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:231
+#: mokaine/tgm-plugin-activation/required-plugins.php:76
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:232
+#: mokaine/tgm-plugin-activation/required-plugins.php:77
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:233
+#: mokaine/tgm-plugin-activation/required-plugins.php:78
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:234
+#: mokaine/tgm-plugin-activation/required-plugins.php:79
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:235
+#: mokaine/tgm-plugin-activation/required-plugins.php:80
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:236
+#: mokaine/tgm-plugin-activation/required-plugins.php:81
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:237
+#: mokaine/tgm-plugin-activation/required-plugins.php:82
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %s plugins. "
+"Contact the administrator of this site for help on getting the plugins "
+"updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:238
+#: mokaine/tgm-plugin-activation/required-plugins.php:83
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:239
+#: mokaine/tgm-plugin-activation/required-plugins.php:84
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:240
+#: mokaine/tgm-plugin-activation/required-plugins.php:85
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:241
+msgid "Return to the dashboard"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:242
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:2107
+#: mokaine/tgm-plugin-activation/required-plugins.php:86
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:243
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:1769
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:244
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:245
+msgid "Dismiss this notice"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:595
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:2337
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:1281
+msgid "Private Repository"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:1285
+msgid "Pre-Packaged"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:1290
+msgid "WordPress Repository"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:1293
+msgid "Required"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:1293
+msgid "Recommended"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:1296
+msgid "Not Installed"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:1299
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:1416
+#, php-format
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Install %2$s"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:1438
+#, php-format
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Activate %2$s"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:1481
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\">Return to the Dashboard</"
+"a>"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:1497
+msgid "Plugin"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:1498
+msgid "Source"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:1499
+msgid "Type"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:1518
+msgid "Install"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:1519
+msgid "Activate"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:1630
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:1746
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:2090
+msgid "Install package not available."
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:2091
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:2092
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:2093
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:2094
+msgid "Plugin install failed."
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:2095
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:2106
+msgid "Plugin activation failed."
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:2229
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:2230
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:2234
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:2235
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:2235
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:2242
+msgid "Show Details"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:2235
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:2242
+msgid "Hide Details"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:2236
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:2237
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:2241
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:2242
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:2243
+msgid "All installations have been completed."
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/class-tgm-plugin-activation.php:2244
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/required-plugins.php:74
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: mokaine/tgm-plugin-activation/required-plugins.php:87
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: search.php:23
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:5 searchform.php:7
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:7
+msgid "Search …"
+msgstr ""
+
+#: single-item.php:74
+msgid "Related Posts"
+msgstr ""
+
+#: single.php:58
+msgid "About"
+msgstr ""
+
+#: single.php:94
+msgid "Related Articles"
+msgstr ""

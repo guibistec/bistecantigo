@@ -1,0 +1,2 @@
+30-06-2016 15:19:08 - ERROR - 86,2 MB - mail> SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting
+14-02-2017 13:34:52 - ERROR - m: 68,6 MB, u: 0 - Blocked by transient newsletter_main_engine set 1 seconds ago
